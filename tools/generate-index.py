@@ -6,6 +6,8 @@ from pathlib import Path
 TEMPLATES_DIR = Path(__file__).resolve().parent.parent / "templates"
 OUTPUT = Path(__file__).resolve().parent.parent / "templates.json"
 
+FIELDS = ["name", "description", "category", "tags", "design_ref", "font", "palette", "features"]
+
 def scan():
     entries = []
     for folder in sorted(TEMPLATES_DIR.iterdir()):
@@ -22,9 +24,11 @@ def scan():
                 "category": "uncategorized",
                 "tags": []
             }
-        data["folder"] = folder.name
-        data["has_preview"] = preview.exists()
-        entries.append(data)
+        # Only keep known fields
+        entry = {k: data[k] for k in FIELDS if k in data}
+        entry["folder"] = folder.name
+        entry["has_preview"] = preview.exists()
+        entries.append(entry)
     return entries
 
 if __name__ == "__main__":

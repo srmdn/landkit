@@ -10,6 +10,15 @@
       "features",
       "cta"
     ],
+    "design_ref": "linear.app.md",
+    "font": "Inter",
+    "palette": "dark",
+    "features": [
+      "hero",
+      "features",
+      "clients",
+      "cta"
+    ],
     "folder": "saas-launchfast",
     "has_preview": false
   }

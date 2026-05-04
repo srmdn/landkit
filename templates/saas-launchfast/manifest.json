@@ -2,5 +2,10 @@
   "name": "LaunchFast",
   "description": "Dark SaaS landing page with bold hero, feature grid, and client logos. For startups shipping fast.",
   "category": "saas",
-  "tags": ["dark", "startup", "hero", "features", "cta"]
+  "tags": ["dark", "startup", "hero", "features", "cta"],
+  "design_ref": "linear.app.md",
+  "font": "Inter",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+  "palette": "dark",
+  "features": ["hero", "features", "clients", "cta"]
 }

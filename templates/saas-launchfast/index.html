@@ -4,64 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaunchFast — Ship your SaaS in half the time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-badge">Now in public beta</div>
+    <div class="hero-badge">
+      <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3" fill="#10b981"/></svg>
+      Now in public beta
+    </div>
     <h1>Ship your SaaS <span>in half the time</span></h1>
-    <p>LaunchFast handles auth, billing, and onboarding so you can focus on the product that actually matters.</p>
+    <p>Auth, billing, onboarding, team management. All the boring stuff, handled. You focus on what makes your product different.</p>
     <div class="hero-cta">
-      <a href="#" class="btn btn-primary">Start free trial</a>
-      <a href="#" class="btn btn-outline">See a demo</a>
+      <a href="#" class="btn btn-primary">
+        Start free trial
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="#" class="btn btn-ghost">See a demo</a>
     </div>
   </section>
 
   <!-- Features -->
   <section class="features">
     <div class="features-header">
-      <h2>Everything you need to launch</h2>
-      <p>No need to stitch together 12 different tools.</p>
+      <h2>Everything you need, nothing you don't</h2>
+      <p>One integration. No need to stitch together six different tools.</p>
     </div>
     <div class="feature-grid">
+
+      <!-- Featured: Auth -->
       <div class="feature-card">
-        <div class="feature-icon">&#9889;</div>
-        <h3>Auth out of the box</h3>
-        <p>Magic links, OAuth, and passwordless login. Works with Google, GitHub, and email.</p>
+        <div>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12l2 2 4-4"/>
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+            </svg>
+          </div>
+          <h3>Auth that just works</h3>
+          <p>Magic links, OAuth, and passwordless login. Google, GitHub, email. Pick what you need.</p>
+        </div>
       </div>
+
+      <!-- Billing -->
       <div class="feature-card">
-        <div class="feature-icon">&#128184;</div>
-        <h3>Billing built in</h3>
-        <p>Stripe integration with subscription management, invoices, and usage-based pricing.</p>
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="14" x="2" y="5" rx="2"/>
+            <line x1="2" x2="22" y1="10" y2="10"/>
+          </svg>
+        </div>
+        <h3>Billing you don't hate</h3>
+        <p>Stripe under the hood. Subscriptions, invoicing, usage-based pricing. No surprises.</p>
       </div>
+
+      <!-- Onboarding -->
       <div class="feature-card">
-        <div class="feature-icon">&#128195;</div>
-        <h3>Onboarding flows</h3>
-        <p>Guided setup wizards that get users to value in under 3 minutes.</p>
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Users land ready</h3>
+        <p>Guided setup that gets your users to value in under 3 minutes. No docs required.</p>
       </div>
+
+      <!-- Team -->
       <div class="feature-card">
-        <div class="feature-icon">&#128268;</div>
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
         <h3>Team management</h3>
-        <p>Roles, permissions, and invites. Your users can bring their whole team.</p>
+        <p>Roles, permissions, and invites. Let your users bring their whole org, not just themselves.</p>
       </div>
+
+      <!-- Analytics -->
       <div class="feature-card">
-        <div class="feature-icon">&#128200;</div>
-        <h3>Analytics dashboard</h3>
-        <p>Pre-built charts for MRR, churn, and user growth. No SQL required.</p>
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/>
+            <path d="m19 9-5 5-4-4-3 3"/>
+          </svg>
+        </div>
+        <h3>Dashboards built in</h3>
+        <p>MRR, churn, user growth. Charts that update live. Stop exporting CSVs.</p>
       </div>
+
+      <!-- Deploy -->
       <div class="feature-card">
-        <div class="feature-icon">&#128640;</div>
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+        </div>
         <h3>Deploy in one click</h3>
-        <p>Push to production with Vercel, Netlify, or your own server. Same config.</p>
+        <p>Push to Vercel, Netlify, or your own server. Same config, same result.</p>
       </div>
+
     </div>
   </section>
 
   <!-- Clients -->
   <section class="clients">
-    <p>Trusted by teams at</p>
+    <p class="clients-label">Trusted by engineering teams at</p>
     <div class="client-logos">
       <span>Acme Corp</span>
       <span>ShipFast</span>
@@ -73,14 +129,17 @@
 
   <!-- CTA -->
   <section class="cta-section">
-    <h2>Ready to ship faster?</h2>
-    <p>Start building in 30 seconds. No credit card, no lock-in, no nonsense.</p>
-    <a href="#" class="btn btn-primary">Get started free</a>
+    <h2>Start shipping today</h2>
+    <p>No credit card, no demo call, no sales pitch. Just sign up and build.</p>
+    <a href="#" class="btn btn-primary">
+      Get started free
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 LaunchFast. <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2026 LaunchFast. <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Status</a></p>
   </footer>
 
 </body>
