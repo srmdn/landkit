@@ -1,0 +1,254 @@
+/* saas-launchfast — dark SaaS landing */
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --text: #f1f1f3;
+  --muted: #8888a0;
+  --accent: #6c5cfc;
+  --accent-glow: rgba(108, 92, 252, 0.25);
+  --border: rgba(255,255,255,0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--accent);
+  border: 1px solid rgba(108, 92, 252, 0.3);
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, var(--accent), #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.15rem;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px var(--accent-glow);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Hero glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero > * { position: relative; z-index: 1; }
+
+/* Features */
+.features {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.features-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.features-header p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.feature-card:hover {
+  border-color: var(--accent);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--accent-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Clients */
+.clients {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.clients p {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.client-logos span {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.cta-section p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero { padding: 4rem 1rem 2.5rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 1rem; }
+  .feature-grid { grid-template-columns: 1fr; }
+}

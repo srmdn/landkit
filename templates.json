@@ -1,0 +1,16 @@
+[
+  {
+    "name": "LaunchFast",
+    "description": "Dark SaaS landing page with bold hero, feature grid, and client logos. For startups shipping fast.",
+    "category": "saas",
+    "tags": [
+      "dark",
+      "startup",
+      "hero",
+      "features",
+      "cta"
+    ],
+    "folder": "saas-launchfast",
+    "has_preview": false
+  }
+]
