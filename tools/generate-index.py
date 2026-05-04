@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Scan templates/ folders and generate templates.json for the gallery."""
 import json
-import os
 from pathlib import Path
 
 TEMPLATES_DIR = Path(__file__).resolve().parent.parent / "templates"
@@ -20,6 +19,7 @@ def scan():
             data = {
                 "name": folder.name.replace("-", " ").title(),
                 "description": "",
+                "category": "uncategorized",
                 "tags": []
             }
         data["folder"] = folder.name
