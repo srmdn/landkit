@@ -57,6 +57,7 @@
       filtered = filtered.filter(function (t) {
         return (t.name || '').toLowerCase().indexOf(filter) !== -1 ||
                (t.description || '').toLowerCase().indexOf(filter) !== -1 ||
+               (t.category || '').toLowerCase().indexOf(filter) !== -1 ||
                (t.tags || []).some(function (tag) { return tag.toLowerCase().indexOf(filter) !== -1; });
       });
     }
