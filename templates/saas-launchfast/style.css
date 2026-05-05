@@ -180,7 +180,7 @@ body {
   color: var(--text-subtle);
   font-size: 13px;
   letter-spacing: -0.13px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 /* Hero ambient glow */
 .hero::before {
