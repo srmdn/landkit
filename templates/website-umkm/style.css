@@ -108,7 +108,16 @@ body {
   color: var(--text);
   cursor: pointer;
   padding: 4px;
+  line-height: 1;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
 }
+.nav-toggle .icon-close { display: none; }
+.nav-open .nav-toggle .icon-hamburger { display: none; }
+.nav-open .nav-toggle .icon-close { display: block; }
 
 /* --- Hero --- */
 .hero {
@@ -649,14 +658,22 @@ body {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-wa { display: none; }
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; }
   .nav-open .nav-links,
   .nav-open .nav-wa {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .nav-open { position: relative; }
+  .nav-open {
+    position: sticky;
+    top: 0;
+    background: rgba(250, 249, 247, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-standard);
+    z-index: 100;
+  }
   .nav-open .nav-inner { flex-wrap: wrap; }
   .nav-open .nav-links {
     order: 3;
@@ -701,5 +718,5 @@ body {
   .keunggulan-item { padding: 1.5rem 1rem; }
   .produk-img { height: 160px; }
   .sa-cta { bottom: 1rem; right: 1rem; left: 1rem; max-width: none; }
-  .wa-float { top: auto; bottom: 5rem; right: 1rem; transform: none; width: 48px; height: 48px; }
+  .wa-float { top: auto; bottom: 5rem; right: 1rem; transform: none; width: 56px; height: 56px; z-index: 1001; }
 }

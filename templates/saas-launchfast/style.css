@@ -124,8 +124,16 @@ body {
   color: var(--text);
   cursor: pointer;
   padding: 4px;
+  line-height: 1;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
 }
-
+.nav-toggle .icon-close { display: none; }
+.nav-open .nav-toggle .icon-hamburger { display: none; }
+.nav-open .nav-toggle .icon-close { display: block; }
 /* --- Hero --- */
 .hero {
   text-align: center;
@@ -951,7 +959,7 @@ body {
 /* Mobile: <768 */
 @media (max-width: 768px) {
   .nav-links, .nav-actions { display: none; }
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; }
   .nav-open .nav-links,
   .nav-open .nav-actions {
     display: flex;
@@ -960,7 +968,13 @@ body {
     padding: 1rem 0;
   }
   .nav-open {
-    position: relative;
+    position: sticky;
+    top: 0;
+    background: rgba(8, 9, 10, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-standard);
+    z-index: 100;
   }
   .nav-open .nav-inner {
     flex-wrap: wrap;
