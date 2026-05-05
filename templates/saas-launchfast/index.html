@@ -3,11 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LaunchFast — Ship your SaaS in half the time</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>LaunchFast: Ship your SaaS in half the time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+        </svg>
+        LaunchFast
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#">Docs</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost btn-sm">Sign in</a>
+        <a href="#" class="btn btn-primary btn-sm">Start free</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
 
   <!-- Hero -->
   <section class="hero">
@@ -24,10 +49,93 @@
       </a>
       <a href="#" class="btn btn-ghost">See a demo</a>
     </div>
+    <p class="hero-micro">No credit card required. Free for up to 1,000 users.</p>
+
+    <!-- Product Visual -->
+    <div class="hero-visual">
+      <div class="dashboard">
+        <div class="dashboard-sidebar">
+          <div class="dash-nav-item active">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/></svg>
+            Overview
+          </div>
+          <div class="dash-nav-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Users
+          </div>
+          <div class="dash-nav-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            Billing
+          </div>
+          <div class="dash-nav-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            Analytics
+          </div>
+          <div class="dash-nav-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Security
+          </div>
+        </div>
+        <div class="dashboard-main">
+          <div class="dash-header">
+            <span class="dash-title">Dashboard</span>
+            <span class="dash-date">Last 30 days</span>
+          </div>
+          <div class="dash-metrics">
+            <div class="dash-metric">
+              <span class="dash-metric-label">Revenue</span>
+              <span class="dash-metric-value">$48,290</span>
+              <span class="dash-metric-change positive">+12.5%</span>
+            </div>
+            <div class="dash-metric">
+              <span class="dash-metric-label">Active users</span>
+              <span class="dash-metric-value">3,847</span>
+              <span class="dash-metric-change positive">+8.2%</span>
+            </div>
+            <div class="dash-metric">
+              <span class="dash-metric-label">Conversion</span>
+              <span class="dash-metric-value">4.2%</span>
+              <span class="dash-metric-change positive">+0.8%</span>
+            </div>
+          </div>
+          <div class="dash-chart">
+            <div class="chart-bars">
+              <div class="chart-bar" style="height:40%"></div>
+              <div class="chart-bar" style="height:55%"></div>
+              <div class="chart-bar" style="height:45%"></div>
+              <div class="chart-bar" style="height:70%"></div>
+              <div class="chart-bar" style="height:60%"></div>
+              <div class="chart-bar" style="height:80%"></div>
+              <div class="chart-bar" style="height:65%"></div>
+              <div class="chart-bar accent" style="height:90%"></div>
+              <div class="chart-bar" style="height:75%"></div>
+              <div class="chart-bar accent" style="height:95%"></div>
+              <div class="chart-bar" style="height:85%"></div>
+              <div class="chart-bar accent" style="height:100%"></div>
+            </div>
+            <div class="chart-labels">
+              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Features -->
-  <section class="features">
+  <!-- Logo Bar -->
+  <section class="logos">
+    <p class="logos-label">Trusted by teams at</p>
+    <div class="logos-row">
+      <span class="logo-item">Vercel</span>
+      <span class="logo-item">Railway</span>
+      <span class="logo-item">Supabase</span>
+      <span class="logo-item">Resend</span>
+      <span class="logo-item">Planetscale</span>
+    </div>
+  </section>
+
+  <!-- Features Bento -->
+  <section class="features" id="features">
     <div class="features-header">
       <h2>Everything you need, nothing you don't</h2>
       <p>One integration. No need to stitch together six different tools.</p>
@@ -115,15 +223,230 @@
     </div>
   </section>
 
-  <!-- Clients -->
-  <section class="clients">
-    <p class="clients-label">Trusted by engineering teams at</p>
-    <div class="client-logos">
-      <span>Acme Corp</span>
-      <span>ShipFast</span>
-      <span>DevFlow</span>
-      <span>CloudKit</span>
-      <span>Unstack</span>
+  <!-- Code Showcase -->
+  <section class="showcase">
+    <div class="showcase-inner">
+      <div class="showcase-text">
+        <span class="showcase-label">Developer experience</span>
+        <h2>Get started in 30 seconds</h2>
+        <p>Install the SDK, add your keys, and ship. No complex config files, no boilerplate setup wizard.</p>
+        <div class="showcase-checklist">
+          <div class="check-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Works with Next.js, Remix, and Astro</span>
+          </div>
+          <div class="check-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>TypeScript types included</span>
+          </div>
+          <div class="check-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Edge-compatible, zero cold starts</span>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-code">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="code-filename">app.ts</span>
+          </div>
+          <pre class="code-block"><code><span class="kw">import</span> { LaunchFast } <span class="kw">from</span> <span class="str">'@launchfast/sdk'</span>
+
+<span class="kw">const</span> app = <span class="kw">new</span> LaunchFast({
+  auth: { providers: [<span class="str">'google'</span>, <span class="str">'github'</span>] },
+  billing: { stripe: process.env.<span class="var">STRIPE_KEY</span> },
+})
+
+app.<span class="fn">listen</span>(<span class="num">3000</span>)</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section class="metrics">
+    <div class="metrics-grid">
+      <div class="metric">
+        <span class="metric-value">3,200+</span>
+        <span class="metric-label">Teams shipped with LaunchFast</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">99.9%</span>
+        <span class="metric-label">Uptime over the last 12 months</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">&lt;50ms</span>
+        <span class="metric-label">Median auth response time</span>
+      </div>
+      <div class="metric">
+        <span class="metric-value">2.4M</span>
+        <span class="metric-label">API calls processed this month</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>From the people who shipped with us</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"We spent three months building auth from scratch before switching to LaunchFast. Deployed in a weekend. I wish we found it sooner."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RM</div>
+          <div>
+            <div class="testimonial-name">Rina Mulyadi</div>
+            <div class="testimonial-role">CTO, KirimLagi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"LaunchFast handles the parts of SaaS that nobody wants to think about. Billing webhooks, team invites, edge cases in OAuth. It just works."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JK</div>
+          <div>
+            <div class="testimonial-name">Jake Kowalski</div>
+            <div class="testimonial-role">Founder, Filehut</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Our onboarding went from a 12-step mess to three clicks. User activation up 40% in the first month. The setup wizard alone is worth it."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SA</div>
+          <div>
+            <div class="testimonial-name">Sarah Andersen</div>
+            <div class="testimonial-role">Head of Product, Blendr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-header">
+      <h2>Simple pricing, no surprises</h2>
+      <p>Start free. Upgrade when you are ready.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Free -->
+      <div class="pricing-card">
+        <div class="pricing-tier">Free</div>
+        <div class="pricing-price">$0<span>/mo</span></div>
+        <div class="pricing-desc">For side projects and prototypes</div>
+        <ul class="pricing-features">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Up to 1,000 active users
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Email and social login
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Stripe integration
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Community support
+          </li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Get started</a>
+      </div>
+      <!-- Pro -->
+      <div class="pricing-card popular">
+        <div class="popular-badge">Most popular</div>
+        <div class="pricing-tier">Pro</div>
+        <div class="pricing-price">$29<span>/mo</span></div>
+        <div class="pricing-desc">For growing SaaS products</div>
+        <ul class="pricing-features">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Unlimited active users
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            SSO and SAML
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Usage-based billing
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Team roles and permissions
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Priority email support
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Analytics dashboard
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block">Start free trial</a>
+      </div>
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <div class="pricing-tier">Enterprise</div>
+        <div class="pricing-price">Custom</div>
+        <div class="pricing-desc">For teams with compliance needs</div>
+        <ul class="pricing-features">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Everything in Pro
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            SOC 2 and GDPR compliance
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Custom SLA and uptime guarantee
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            Dedicated support engineer
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            On-prem deployment option
+          </li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Contact sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <h2>Common questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How is LaunchFast different from Auth0 or Clerk?</summary>
+        <p>Auth0 and Clerk do auth. LaunchFast does auth, billing, onboarding, team management, and analytics in one package. You pick what you need. No need for three separate vendors and four integration weeks.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I use just the auth module?</summary>
+        <p>Yes. Every module works independently. Import only what you need. The full stack is there if you want it, but you can run auth alone and pair it with your own billing setup.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What frameworks do you support?</summary>
+        <p>Next.js, Remix, Astro, Nuxt, SvelteKit, and plain Express. The SDK is framework-agnostic at its core, with adapters for the popular ones.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a free tier?</summary>
+        <p>Yes. Free for up to 1,000 active users with full access to auth, billing, and onboarding. No credit card required. Upgrade to Pro when you outgrow it.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How does pricing work for multiple projects?</summary>
+        <p>Each project is billed separately. The free tier applies per project. Pro pricing is per project with a single billing dashboard for your whole account.</p>
+      </details>
     </div>
   </section>
 
@@ -131,16 +454,61 @@
   <section class="cta-section">
     <h2>Start shipping today</h2>
     <p>No credit card, no demo call, no sales pitch. Just sign up and build.</p>
-    <a href="#" class="btn btn-primary">
+    <a href="#" class="btn btn-primary btn-lg">
       Get started free
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 LaunchFast. <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Status</a></p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+            LaunchFast
+          </div>
+          <p class="footer-tagline">Ship your SaaS in half the time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Changelog</a>
+          <a href="#">Docs</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+          <a href="#">Status</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LaunchFast. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 {
   "name": "LaunchFast",
-  "description": "Dark SaaS landing page with bold hero, feature grid, and client logos. For startups shipping fast.",
+  "description": "Dark SaaS landing page with sticky nav, hero dashboard, bento features, code showcase, testimonials, pricing, and FAQ. For startups shipping fast.",
   "category": "saas",
-  "tags": ["dark", "startup", "hero", "features", "cta"],
+  "tags": ["dark", "startup", "hero", "features", "pricing", "testimonials", "dashboard"],
   "design_ref": "linear.app.md",
   "font": "Inter",
-  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600&family=JetBrains+Mono:wght@400;500&display=swap",
   "palette": "dark",
-  "features": ["hero", "features", "clients", "cta"]
+  "features": ["nav", "hero", "dashboard", "logos", "features", "showcase", "metrics", "testimonials", "pricing", "faq", "cta", "footer"]
 }
