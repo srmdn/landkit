@@ -1,6 +1,5 @@
-// website-umkm — Mobile nav toggle + scroll animations + monetization CTA dismiss
+// website-umkm — Mobile nav toggle + scroll animations
 (function() {
-  // Mobile nav toggle
   var toggle = document.getElementById('navToggle');
   var nav = document.querySelector('.nav');
 
@@ -29,16 +28,6 @@
     }, { threshold: 0.15 });
     els.forEach(function(el) { obs.observe(el); });
   } else {
-    // Fallback: show all immediately
     els.forEach(function(el) { el.classList.add('visible'); });
-  }
-
-  // Monetization CTA dismiss
-  var saCta = document.getElementById('saCta');
-  var saCtaClose = document.getElementById('saCtaClose');
-  if (saCta && saCtaClose) {
-    saCtaClose.addEventListener('click', function() {
-      saCta.style.display = 'none';
-    });
   }
 })();

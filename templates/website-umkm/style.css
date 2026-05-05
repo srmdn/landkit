@@ -523,8 +523,9 @@ body {
 /* --- Floating WhatsApp --- */
 .wa-float {
   position: fixed;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
   width: 56px;
   height: 56px;
   background: var(--accent);
@@ -539,7 +540,7 @@ body {
   animation: wa-pulse 2.5s ease-in-out infinite;
 }
 .wa-float:hover {
-  transform: scale(1.08);
+  transform: translateY(-50%) scale(1.08);
   box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
 }
 @keyframes wa-pulse {
@@ -567,19 +568,6 @@ body {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
-.sa-cta-close {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  background: none;
-  border: none;
-  color: rgba(255,255,255,0.4);
-  cursor: pointer;
-  padding: 2px;
-  line-height: 1;
-  transition: color 0.15s;
-}
-.sa-cta-close:hover { color: rgba(255,255,255,0.7); }
 .sa-cta-inner { display: flex; flex-direction: column; gap: 6px; }
 .sa-cta-label {
   font-size: 11px;
@@ -713,5 +701,5 @@ body {
   .keunggulan-item { padding: 1.5rem 1rem; }
   .produk-img { height: 160px; }
   .sa-cta { bottom: 1rem; right: 1rem; left: 1rem; max-width: none; }
-  .wa-float { bottom: 1rem; left: 1rem; width: 48px; height: 48px; }
+  .wa-float { top: auto; bottom: 5rem; right: 1rem; transform: none; width: 48px; height: 48px; }
 }
