@@ -1,18 +1,26 @@
-// saas-launchfast — Mobile nav toggle
+// saas-launchfast — Mobile nav toggle + monetization CTA dismiss
 (function() {
-  const toggle = document.getElementById('navToggle');
-  const nav = document.querySelector('.nav');
+  // Mobile nav
+  var toggle = document.getElementById('navToggle');
+  var nav = document.querySelector('.nav');
 
   if (toggle && nav) {
     toggle.addEventListener('click', function() {
       nav.classList.toggle('nav-open');
     });
-
-    // Close nav when clicking a link (mobile)
     nav.querySelectorAll('.nav-links a').forEach(function(link) {
       link.addEventListener('click', function() {
         nav.classList.remove('nav-open');
       });
+    });
+  }
+
+  // Monetization CTA dismiss
+  var saCta = document.getElementById('saCta');
+  var saCtaClose = document.getElementById('saCtaClose');
+  if (saCta && saCtaClose) {
+    saCtaClose.addEventListener('click', function() {
+      saCta.style.display = 'none';
     });
   }
 })();

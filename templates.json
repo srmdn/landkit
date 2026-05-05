@@ -1,25 +1,65 @@
 [
   {
     "name": "LaunchFast",
-    "description": "Dark SaaS landing page with bold hero, feature grid, and client logos. For startups shipping fast.",
+    "description": "Dark SaaS landing page with sticky nav, hero dashboard, bento features, code showcase, testimonials, pricing, and FAQ. For startups shipping fast.",
     "category": "saas",
     "tags": [
       "dark",
       "startup",
       "hero",
       "features",
-      "cta"
+      "pricing",
+      "testimonials",
+      "dashboard"
     ],
     "design_ref": "linear.app.md",
     "font": "Inter",
     "palette": "dark",
     "features": [
+      "nav",
       "hero",
+      "dashboard",
+      "logos",
       "features",
-      "clients",
-      "cta"
+      "showcase",
+      "metrics",
+      "testimonials",
+      "pricing",
+      "faq",
+      "cta",
+      "footer"
     ],
     "folder": "saas-launchfast",
+    "has_preview": false
+  },
+  {
+    "name": "website-umkm",
+    "description": "Landing page UMKM Indonesia: katalog produk, checkout via WhatsApp, testimoni, FAQ. Light theme, mobile-first, bahasa Indonesia.",
+    "category": "umkm",
+    "tags": [
+      "umkm",
+      "whatsapp",
+      "indonesia",
+      "small-business",
+      "landing-page",
+      "product-catalog"
+    ],
+    "features": [
+      "Sticky nav dengan hamburger menu mobile",
+      "Hero section dengan CTA WhatsApp",
+      "Keunggulan bisnis (3 kolom)",
+      "Katalog produk dengan tombol pesan per item",
+      "Cara pesan (3 langkah)",
+      "Testimoni pelanggan",
+      "FAQ accordion",
+      "CTA section WhatsApp",
+      "Footer 4 kolom dengan sosial media",
+      "Floating WhatsApp button (bottom-left)",
+      "Monetization CTA: Dibuat oleh Said (bottom-right)",
+      "Scroll fade-in animations",
+      "Responsive (desktop, tablet, mobile, small mobile)"
+    ],
+    "folder": "website-umkm",
     "has_preview": false
   }
 ]

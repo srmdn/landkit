@@ -1,0 +1,22 @@
+{
+  "name": "website-umkm",
+  "version": "1.0.0",
+  "description": "Landing page UMKM Indonesia: katalog produk, checkout via WhatsApp, testimoni, FAQ. Light theme, mobile-first, bahasa Indonesia.",
+  "category": "umkm",
+  "tags": ["umkm", "whatsapp", "indonesia", "small-business", "landing-page", "product-catalog"],
+  "features": [
+    "Sticky nav dengan hamburger menu mobile",
+    "Hero section dengan CTA WhatsApp",
+    "Keunggulan bisnis (3 kolom)",
+    "Katalog produk dengan tombol pesan per item",
+    "Cara pesan (3 langkah)",
+    "Testimoni pelanggan",
+    "FAQ accordion",
+    "CTA section WhatsApp",
+    "Footer 4 kolom dengan sosial media",
+    "Floating WhatsApp button (bottom-left)",
+    "Monetization CTA: Dibuat oleh Said (bottom-right)",
+    "Scroll fade-in animations",
+    "Responsive (desktop, tablet, mobile, small mobile)"
+  ]
+}

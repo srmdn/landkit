@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasa Nusantara: Oleh-oleh khas Indonesia, langsung ke rumah kamu</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        Rasa Nusantara
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#produk">Produk</a>
+        <a href="#cara-pesan">Cara Pesan</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20pesan%20oleh-oleh" class="btn btn-wa btn-sm nav-wa" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Pesan Sekarang
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Pengiriman ke seluruh Indonesia</span>
+      <h1>Oleh-oleh khas Nusantara, <span>langsung ke rumah kamu</span></h1>
+      <p>Dari keripik Balado Padang sampai Brownies Ambarawa. Pesan lewat WhatsApp, bayar setelah konfirmasi. Tanpa aplikasi, tanpa ribet.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20pesan%20oleh-oleh" class="btn btn-wa" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pesan via WhatsApp
+        </a>
+        <a href="#produk" class="btn btn-outline">Lihat Produk</a>
+      </div>
+      <p class="hero-micro">Balas cepat dalam 30 menit. Garansi tiba selamat.</p>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section class="keunggulan">
+    <div class="keunggulan-grid">
+      <div class="keunggulan-item">
+        <div class="keunggulan-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Garansi aman</h3>
+        <p>Barang rusak di jalan? Ganti baru, tanpa syarat. Pengiriman kami pakai bubble wrap dan kayu lapis.</p>
+      </div>
+      <div class="keunggulan-item">
+        <div class="keunggulan-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+        </div>
+        <h3>Bayar setelah konfirmasi</h3>
+        <p>Tidak perlu isi form panjang. Chat WhatsApp, konfirmasi order, baru transfer. Semudah itu.</p>
+      </div>
+      <div class="keunggulan-item">
+        <div class="keunggulan-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Kirim ke seluruh Indonesia</h3>
+        <p>Dari Sabang sampai Merauke. JNE, SiCepat, dan Pos Indonesia tersedia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section class="produk" id="produk">
+    <div class="section-header">
+      <h2>Produk kami</h2>
+      <p>Pilihan terbaik dari setiap daerah. Segar, asli, dan langsung dikirim dari tempatnya.</p>
+    </div>
+    <div class="produk-grid">
+      <div class="produk-card">
+        <div class="produk-img" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+          <span class="produk-badge">Best seller</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <div class="produk-body">
+          <h3>Keripik Balado Padang</h3>
+          <p>Pedas, renyah, dan bikin nagih. Bikinan rumahan di Padang, dikemas vacuum seal.</p>
+          <div class="produk-footer">
+            <span class="produk-harga">Rp 45.000</span>
+            <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20pesan%20Keripik%20Balado%20Padang" class="btn btn-wa btn-sm" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="produk-card">
+        <div class="produk-img" style="background: linear-gradient(135deg, #92400e 0%, #78350f 100%);">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5z"/><path d="M3 14l1.5-6h15L21 14"/><path d="M12 8V3"/><path d="M9 3h6"/></svg>
+        </div>
+        <div class="produk-body">
+          <h3>Brownies Ambarawa</h3>
+          <p>Legendaris dari Ambarawa. Tekstur lembut, rasa coklat Premium, tahan 2 minggu.</p>
+          <div class="produk-footer">
+            <span class="produk-harga">Rp 75.000</span>
+            <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20pesan%20Brownies%20Ambarawa" class="btn btn-wa btn-sm" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="produk-card">
+        <div class="produk-img" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M6.13 1L6 16a2 2 0 002 2h8a2 2 0 002-2V1"/><path d="M1 6h22"/><path d="M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </div>
+        <div class="produk-body">
+          <h3>Kopi Arabika Gayo</h3>
+          <p>Biji kopi premium dari dataran tinggi Gayo, Aceh. Roast medium, rasa fruity dan clean.</p>
+          <div class="produk-footer">
+            <span class="produk-harga">Rp 85.000</span>
+            <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20pesan%20Kopi%20Arabika%20Gayo" class="btn btn-wa btn-sm" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cara Pesan -->
+  <section class="cara-pesan" id="cara-pesan">
+    <div class="section-header">
+      <h2>Cara pesan</h2>
+      <p>Tiga langkah, tanpa daftar akun.</p>
+    </div>
+    <div class="langkah-grid">
+      <div class="langkah-item">
+        <div class="langkah-num">1</div>
+        <h3>Pilih produk</h3>
+        <p>Lihat katalog di atas, pilih yang kamu suka. Atau langsung tanya kami kalau bingung.</p>
+      </div>
+      <div class="langkah-item">
+        <div class="langkah-num">2</div>
+        <h3>Chat WhatsApp</h3>
+        <p>Tekan tombol "Pesan" di produk. Otomatis terbuka chat WhatsApp dengan detail pesanan kamu.</p>
+      </div>
+      <div class="langkah-item">
+        <div class="langkah-num">3</div>
+        <h3>Terima barang</h3>
+        <p>Konfirmasi order, transfer, tunggu pengiriman. Kami update setiap hari sampai paket sampai.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="testimoni" id="testimoni">
+    <div class="section-header">
+      <h2>Kata pelanggan</h2>
+      <p>Bukan kami yang bilang. Mereka yang bilang.</p>
+    </div>
+    <div class="testimoni-grid">
+      <div class="testimoni-card">
+        <div class="testimoni-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimoni-quote">"Keripik Balado-nya beneran enak, pedesnya pas. Packaging rapi, nggak ada yang pecah. Udah pesan 3 kali dan selalu puas."</p>
+        <div class="testimoni-author">
+          <div class="testimoni-avatar" style="background:#fef3c7;color:#92400e;">IW</div>
+          <div>
+            <div class="testimoni-name">Ibu Wulan</div>
+            <div class="testimoni-role">Jakarta Selatan</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimoni-card">
+        <div class="testimoni-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimoni-quote">"Beli brownies buat oleh-oleh ke kantor, langsung habis. Rekan kerja pada nanya beli dimana. Sekarang jadi langganan."</p>
+        <div class="testimoni-author">
+          <div class="testimoni-avatar" style="background:#dbeafe;color:#1e40af;">AP</div>
+          <div>
+            <div class="testimoni-name">Andi Pratama</div>
+            <div class="testimoni-role">Bandung</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimoni-card">
+        <div class="testimoni-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimoni-quote">"Kopi Gayo-nya juara. Aroma langsung kerasa begitu buka kemasan. Ngopi pagi jadi ritual. Pengiriman juga cepat, 2 hari sampe Surabaya."</p>
+        <div class="testimoni-author">
+          <div class="testimoni-avatar" style="background:#dcfce7;color:#166534;">RH</div>
+          <div>
+            <div class="testimoni-name">Ratna Hartini</div>
+            <div class="testimoni-role">Surabaya</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <h2>Pertanyaan yang sering ditanyain</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Bagaimana cara pesan?</summary>
+        <p>Tekan tombol "Pesan" di produk yang kamu mau. Otomatis terbuka chat WhatsApp dengan pesan template. Kamu tinggal kirim dan kami langsung respon.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Apakah bisa bayar setelah barang sampai?</summary>
+        <p>Kamu transfer setelah kami konfirmasi pesanan. Bukan COD, tapi prosesnya cepat. Kami kirim bukti pengiriman dan update tracking tiap hari.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Berapa ongkos kirimnya?</summary>
+        <p>Tergantung daerah. JNE Regular mulai dari Rp 15.000 untuk Pulau Jawa. Kami cek ongkir duluan sebelum konfirmasi pesanan.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Barang rusak saat pengiriman, gimana?</summary>
+        <p>Ganti baru tanpa syarat. Foto barang yang rusak, kirim ke WhatsApp kami, kami kirim ulang di hari yang sama.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Bisa pesan untuk hadiah atau oleh-oleh?</summary>
+        <p>Bisa. Kami sediakan kemasan kado tambahan (gratis). Tulis aja di chat untuk permintaan khusus.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Masih ragu? Tanya aja langsung</h2>
+    <p>Gapapa kalau belum mau pesan sekarang. Chat kami untuk tanya apa aja.</p>
+    <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20tanya-tanya%20soal%20produknya" class="btn btn-wa btn-lg" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chat di WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+            Rasa Nusantara
+          </div>
+          <p class="footer-tagline">Oleh-oleh khas Indonesia, langsung ke rumah kamu.</p>
+          <div class="footer-sosmed">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.08 15.2a6.34 6.34 0 0010.86 4.46v-7.15a8.16 8.16 0 005.65 2.25V11.2a4.85 4.85 0 01-3.77-1.58 4.83 4.83 0 01-1.23-2.93z"/></svg>
+            </a>
+            <a href="https://wa.me/6281234567890" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>produk</h4>
+          <a href="#">Keripik Balado</a>
+          <a href="#">Brownies Ambarawa</a>
+          <a href="#">Kopi Gayo</a>
+          <a href="#">Lihat Semua</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="#">Cara Pesan</a>
+          <a href="#">Ongkos Kirim</a>
+          <a href="#">Kebijakan Pengembalian</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>kontak</h4>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="mailto:halo@rasanusantara.id">halo@rasanusantara.id</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rasa Nusantara. Semua hak dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Monetization CTA: Dibuat oleh Said -->
+  <div class="sa-cta" id="saCta">
+    <button class="sa-cta-close" id="saCtaClose" aria-label="Tutup">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="sa-cta-inner">
+      <span class="sa-cta-label">Dibuat oleh Said</span>
+      <p class="sa-cta-text">Mau landing page ini jadi milik kamu?</p>
+      <a href="https://wa.me/628567040666?text=Hai%2C%20saya%20tertarik%20buat%20landing%20page%20untuk%20bisnis%20saya" class="sa-cta-btn" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Hubungi sekarang
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/6281234567890?text=Hai%2C%20saya%20mau%20tanya%20soal%20produknya" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
