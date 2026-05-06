@@ -971,19 +971,17 @@ body {
     padding: 1rem 0;
   }
   .nav-open {
-    position: sticky;
-    top: 0;
     background: rgba(8, 9, 10, 0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-standard);
-    z-index: 100;
   }
   .nav-open .nav-inner {
     flex-wrap: wrap;
     height: auto;
+    padding-bottom: 0.75rem;
   }
-  .nav-links {
+  .nav-open .nav-links {
     order: 3;
     gap: 0;
     width: 100%;
@@ -1006,6 +1004,10 @@ body {
   }
   .hero h1 { font-size: 1.8rem; }
   .hero p { font-size: 16px; }
+
+  body.nav-open {
+    overflow: hidden;
+  }
 
   /* Dashboard: hide sidebar, simplify */
   .dashboard {
