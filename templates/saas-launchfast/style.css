@@ -969,19 +969,15 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 1000;
     background: rgba(8, 9, 10, 0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
+    border-bottom: 1px solid var(--border-standard);
   }
   .nav-open .nav-inner {
     flex-wrap: wrap;
     height: auto;
-    align-content: flex-start;
   }
   .nav-open .nav-links,
   .nav-open .nav-actions {
