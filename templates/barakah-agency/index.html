@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarakahAgency - Design that ships</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000000'/%3E%3Cpath d='M8 8h16v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3Cpath d='M8 14h12v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3Cpath d='M8 20h8v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="BarakahAgency home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v4H4z"/>
+          <path d="M4 10h12v4H4z"/>
+          <path d="M4 16h8v4H4z"/>
+        </svg>
+        <span>BarakahAgency</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg class="icon-hamburger" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Start a project</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1 class="hero-title">Design that ships.</h1>
+        <p class="hero-subtitle">BarakahAgency builds websites and brands for startups who would rather launch than debate.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">Start a project</a>
+          <a href="#work" class="btn btn-ghost btn-lg">View our work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="bento-grid">
+          <div class="bento-item bento-lg">
+            <div class="bento-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <span>KirimLagi</span>
+            </div>
+          </div>
+          <div class="bento-item bento-sm">
+            <div class="bento-placeholder">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>Filehut</span>
+            </div>
+          </div>
+          <div class="bento-item bento-sm">
+            <div class="bento-placeholder">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72"/>
+                <path d="M2.75 12.41c6.03-1.23 9.42-1.23 17.72-2.13"/>
+              </svg>
+              <span>Blendr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients">
+    <div class="clients-inner">
+      <p class="clients-label">Trusted by teams at</p>
+      <div class="clients-logos">
+        <span class="client-name">KirimLagi</span>
+        <span class="client-name">Filehut</span>
+        <span class="client-name">Blendr</span>
+        <span class="client-name">Paylo</span>
+        <span class="client-name">Shipfast</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work -->
+  <section class="work" id="work">
+    <div class="work-inner">
+      <div class="section-header">
+        <span class="section-label">Selected Work</span>
+        <h2 class="section-title">Projects we shipped</h2>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-card-visual">
+            <div class="work-card-placeholder work-card-fintech">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card-content">
+            <h3 class="work-card-title">KirimLagi</h3>
+            <p class="work-card-meta">Fintech dashboard redesign</p>
+            <p class="work-card-desc">Rebuilt the entire merchant portal from scratch. Conversion up 34% in the first month post-launch.</p>
+            <a href="#" class="work-card-link">View case study
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card-visual">
+            <div class="work-card-placeholder work-card-saas">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card-content">
+            <h3 class="work-card-title">Filehut</h3>
+            <p class="work-card-meta">SaaS landing page</p>
+            <p class="work-card-desc">From zero to first 1,000 waitlist signups in six weeks. Built in Framer, shipped in days.</p>
+            <a href="#" class="work-card-link">View case study
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card-visual">
+            <div class="work-card-placeholder work-card-brand">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72"/>
+                <path d="M2.75 12.41c6.03-1.23 9.42-1.23 17.72-2.13"/>
+              </svg>
+            </div>
+          </div>
+          <div class="work-card-content">
+            <h3 class="work-card-title">Blendr</h3>
+            <p class="work-card-meta">Brand identity + Web</p>
+            <p class="work-card-desc">Full rebrand and no-code site shipped in ten days. Logo to live URL, no shortcuts.</p>
+            <a href="#" class="work-card-link">View case study
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <div class="section-header">
+        <span class="section-label">Services</span>
+        <h2 class="section-title">What we do</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Web Design</h3>
+          <p class="service-desc">Landing pages, marketing sites, and product dashboards. Built to convert, not to decorate.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72"/>
+              <path d="M2.75 12.41c6.03-1.23 9.42-1.23 17.72-2.13"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Brand Identity</h3>
+          <p class="service-desc">Logo, color system, and visual language. Coherent from day one, not patched together later.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 class="service-title">No-Code Development</h3>
+          <p class="service-desc">Framer, Webflow, or pure HTML/CSS. We ship without waiting for engineering bandwidth.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Motion Design</h3>
+          <p class="service-desc">Scroll animations, micro-interactions, and Lottie exports. Sites that feel alive, not static.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-inner">
+      <div class="section-header">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What clients say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          <div class="testimonial-quote">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 11H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0M20 11h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">BarakahAgency delivered our merchant portal in three weeks. The previous agency quoted six months.</p>
+          <footer class="testimonial-author">
+            <span class="testimonial-name">Rina Mulyadi</span>
+            <span class="testimonial-role">Product Lead at KirimLagi</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-quote">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 11H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0M20 11h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">They treated our landing page like their own product. Every pixel had intent behind it.</p>
+          <footer class="testimonial-author">
+            <span class="testimonial-name">Jake Kowalski</span>
+            <span class="testimonial-role">Founder at Filehut</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-quote">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 11H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0M20 11h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">Fast, opinionated, and zero hand-holding needed. Exactly what a startup team needs.</p>
+          <footer class="testimonial-author">
+            <span class="testimonial-name">Sarah Andersen</span>
+            <span class="testimonial-role">CMO at Blendr</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="cta-section-inner">
+      <h2 class="cta-title">Ready to ship?</h2>
+      <p class="cta-subtitle">Tell us what you are building. We will reply within 24 hours.</p>
+      <div class="cta-actions">
+        <a href="mailto:hello@barakahagency.com" class="btn btn-primary btn-lg">Start a project</a>
+        <span class="cta-or">or email <a href="mailto:hello@barakahagency.com">hello@barakahagency.com</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo" aria-label="BarakahAgency home">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16v4H4z"/>
+            <path d="M4 10h12v4H4z"/>
+            <path d="M4 16h8v4H4z"/>
+          </svg>
+          <span>BarakahAgency</span>
+        </a>
+        <p class="footer-tagline">Design that ships. No fluff, no delays.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <a href="#" target="_blank" rel="noopener">Twitter</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 BarakahAgency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Monetization CTA -->
+  <div class="sa-cta" id="saCta">
+    <div class="sa-cta-inner">
+      <span class="sa-cta-label">Dibuat oleh Said</span>
+      <p class="sa-cta-text">Mau landing page ini jadi milik kamu?</p>
+      <a href="https://wa.me/628567040666?text=Hai%2C%20saya%20tertarik%20buat%20landing%20page%20untuk%20bisnis%20saya" class="sa-cta-btn" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Hubungi sekarang
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

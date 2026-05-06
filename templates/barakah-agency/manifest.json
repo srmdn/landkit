@@ -1,0 +1,11 @@
+{
+  "name": "BarakahAgency",
+  "description": "Dark agency portfolio with bold hero, case study grid, services, and testimonials. For creative studios and design agencies.",
+  "category": "agency",
+  "tags": ["dark", "portfolio", "agency", "case-studies", "creative"],
+  "design_ref": "framer.md",
+  "font": "Inter",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+  "palette": "dark",
+  "features": ["hero", "clients", "portfolio", "services", "testimonials", "cta", "footer"]
+}
