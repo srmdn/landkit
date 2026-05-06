@@ -61,7 +61,7 @@
       "Responsive (desktop, tablet, mobile, small mobile)"
     ],
     "folder": "website-umkm",
-    "has_preview": false,
-    "preview_file": null
+    "has_preview": true,
+    "preview_file": "preview.webp"
   }
 ]
