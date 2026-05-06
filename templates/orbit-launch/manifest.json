@@ -1,0 +1,11 @@
+{
+  "name": "Orbit Launch",
+  "description": "Dark coming-soon landing page with countdown timer, email waitlist, and animated starfield background. SpaceX-inspired, futuristic vibe.",
+  "category": "coming-soon",
+  "tags": ["dark", "coming-soon", "countdown", "waitlist", "space", "minimal"],
+  "design_ref": "spacex.md",
+  "font": "Inter",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+  "palette": "dark",
+  "features": ["nav", "hero", "countdown", "email-capture", "teaser", "cta", "footer"]
+}

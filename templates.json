@@ -27,6 +27,34 @@
     "preview_file": "preview.webp"
   },
   {
+    "name": "Orbit Launch",
+    "description": "Dark coming-soon landing page with countdown timer, email waitlist, and animated starfield background. SpaceX-inspired, futuristic vibe.",
+    "category": "coming-soon",
+    "tags": [
+      "dark",
+      "coming-soon",
+      "countdown",
+      "waitlist",
+      "space",
+      "minimal"
+    ],
+    "design_ref": "spacex.md",
+    "font": "Inter",
+    "palette": "dark",
+    "features": [
+      "nav",
+      "hero",
+      "countdown",
+      "email-capture",
+      "teaser",
+      "cta",
+      "footer"
+    ],
+    "folder": "orbit-launch",
+    "has_preview": false,
+    "preview_file": null
+  },
+  {
     "name": "LaunchFast",
     "description": "Dark SaaS landing page with sticky nav, hero dashboard, bento features, code showcase, testimonials, pricing, and FAQ. For startups shipping fast.",
     "category": "saas",
