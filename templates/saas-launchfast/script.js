@@ -37,9 +37,9 @@
   // Close on logo click
   nav.querySelector('.nav-logo').addEventListener('click', closeNav);
 
-  // Close on click outside the nav
-  document.addEventListener('click', function(e) {
-    if (nav.classList.contains('nav-open') && !nav.contains(e.target)) {
+  // Close on click outside nav-inner (on the overlay itself)
+  nav.addEventListener('click', function(e) {
+    if (nav.classList.contains('nav-open') && !e.target.closest('.nav-inner')) {
       closeNav();
     }
   });
