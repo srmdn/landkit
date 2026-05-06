@@ -960,8 +960,8 @@ body {
   }
 }
 
-/* Mobile: <768 */
-@media (max-width: 768px) {
+/* Mobile: <640 */
+@media (max-width: 640px) {
   .nav-links, .nav-actions { display: none; }
   .nav-toggle { display: flex; }
 
@@ -1079,6 +1079,8 @@ body {
   .pricing-price { font-size: 2rem; }
 
   .logos-row { gap: 1.5rem; }
+
+  .sa-cta { bottom: 1rem; right: 1rem; left: 1rem; max-width: none; }
 }
 
 /* --- Monetization CTA (Dibuat oleh Said) --- */
@@ -1133,6 +1135,3 @@ body {
   font-family: inherit;
 }
 .sa-cta-btn:hover { background: #1da851; }
-@media (max-width: 480px) {
-  .sa-cta { bottom: 1rem; right: 1rem; left: 1rem; max-width: none; }
-}
