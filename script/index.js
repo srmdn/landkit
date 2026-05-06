@@ -1,4 +1,4 @@
-// landkit gallery — loads templates.json, renders grid, supports category filter
+// landkit gallery: dark theme, smooth interactions
 
 (function () {
   var gallery = document.getElementById('gallery');
@@ -29,7 +29,6 @@
     });
     filterBar.innerHTML = html;
 
-    // Click handlers
     var buttons = filterBar.querySelectorAll('.cat-btn');
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -45,14 +44,12 @@
     filter = (filter || '').toLowerCase().trim();
     var filtered = templates;
 
-    // Category filter
     if (activeCategory !== 'all') {
       filtered = filtered.filter(function (t) {
         return (t.category || 'uncategorized') === activeCategory;
       });
     }
 
-    // Search filter
     if (filter) {
       filtered = filtered.filter(function (t) {
         return (t.name || '').toLowerCase().indexOf(filter) !== -1 ||
@@ -70,7 +67,7 @@
     gallery.innerHTML = filtered.map(function (t) {
       var imgHtml = t.has_preview
         ? '<img src="templates/' + t.folder + '/' + (t.preview_file || 'preview.png') + '" alt="' + t.name + '" loading="lazy">'
-        : '<span>No preview</span>';
+        : '<div class="no-preview">Preview coming soon</div>';
       var tagsHtml = (t.tags || []).map(function (tag) {
         return '<span class="tag">' + tag + '</span>';
       }).join('');
@@ -86,6 +83,17 @@
       '</a>';
     }).join('');
   }
+
+  // Keyboard shortcut: / to focus search
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement !== search) {
+      e.preventDefault();
+      search.focus();
+    }
+    if (e.key === 'Escape' && document.activeElement === search) {
+      search.blur();
+    }
+  });
 
   // Init
   fetchTemplates().then(function (data) {

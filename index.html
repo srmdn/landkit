@@ -3,24 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>landkit — open source landing page templates</title>
+  <title>landkit: open source landing page templates</title>
   <meta name="description" content="Open source landing page templates. No frameworks, no build steps, just HTML you can use.">
+  <meta property="og:title" content="landkit: open source landing page templates">
+  <meta property="og:description" content="Copy a folder, open the file, start editing. Dark, light, SaaS, UMKM, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://srmdn.github.io/landkit/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="landkit: open source landing page templates">
+  <meta name="twitter:description" content="Copy a folder, open the file, start editing.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/gallery.css">
 </head>
 <body>
   <header>
-    <h1><a href="https://github.com/srmdn/landkit">landkit</a></h1>
-    <p>Open source landing page templates. Copy a folder, open the file, start editing.</p>
-    <div class="search-bar">
-      <input type="text" id="search" placeholder="Search templates..." autofocus>
+    <div class="header-inner">
+      <div class="brand">
+        <a href="https://github.com/srmdn/landkit" class="logo">landkit</a>
+        <span class="badge">v0.2</span>
+      </div>
+      <p class="tagline">Open source landing page templates.<br>No frameworks, no build steps, just HTML you can use.</p>
+      <div class="search-bar">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="search" placeholder="Search templates..." autofocus>
+        <kbd class="search-kbd">/</kbd>
+      </div>
+      <div id="category-filters" class="category-filters"></div>
     </div>
-    <div id="category-filters" class="category-filters"></div>
   </header>
 
   <main id="gallery"></main>
 
   <footer>
-    <p><a href="https://github.com/srmdn/landkit">GitHub</a> &middot; MIT licensed &middot; by <a href="https://srmdn.com">srmdn</a></p>
+    <div class="footer-inner">
+      <p>MIT licensed. Built by <a href="https://srmdn.com">srmdn</a>. Contribute on <a href="https://github.com/srmdn/landkit">GitHub</a>.</p>
+    </div>
   </footer>
 
   <script src="script/index.js"></script>
