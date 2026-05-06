@@ -22,7 +22,6 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { overflow-x: hidden; }
 
 body {
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -71,6 +70,7 @@ body {
 
 /* --- Navigation --- */
 .nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -224,6 +224,7 @@ body {
   overflow: hidden;
   text-align: left;
   box-shadow: rgba(0,0,0,0.4) 0px 8px 32px;
+  max-width: 100%;
 }
 .dashboard-sidebar {
   border-right: 1px solid var(--border-subtle);
