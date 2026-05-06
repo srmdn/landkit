@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BarakahAgency - Design that ships</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000000'/%3E%3Cpath d='M8 8h16v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3Cpath d='M8 14h12v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3Cpath d='M8 20h8v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050505'/%3E%3Cpath d='M8 8h16v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3Cpath d='M8 14h12v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3Cpath d='M8 20h8v4H8z' fill='none' stroke='%230099ff' stroke-width='2.5'/%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
@@ -39,20 +46,25 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-primary">Start a project</a>
+        <a href="#contact" class="btn btn-primary magnetic">Start a project</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
+    <div class="aurora" aria-hidden="true">
+      <div class="aurora-blob aurora-blob-1"></div>
+      <div class="aurora-blob aurora-blob-2"></div>
+      <div class="aurora-blob aurora-blob-3"></div>
+    </div>
     <div class="hero-inner">
-      <div class="hero-content">
+      <div class="hero-content" data-reveal>
         <h1 class="hero-title">Design that ships.</h1>
         <p class="hero-subtitle">BarakahAgency builds websites and brands for startups who would rather launch than debate.</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary btn-lg">Start a project</a>
-          <a href="#work" class="btn btn-ghost btn-lg">View our work
+          <a href="#contact" class="btn btn-primary btn-lg magnetic">Start a project</a>
+          <a href="#work" class="btn btn-ghost btn-lg magnetic">View our work
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
@@ -60,7 +72,7 @@
           </a>
         </div>
       </div>
-      <div class="hero-visual">
+      <div class="hero-visual" data-reveal data-reveal-delay="100">
         <div class="bento-grid">
           <div class="bento-item bento-lg">
             <div class="bento-placeholder">
@@ -96,16 +108,23 @@
     </div>
   </section>
 
-  <!-- Clients -->
+  <!-- Clients Marquee -->
   <section class="clients">
-    <div class="clients-inner">
+    <div class="clients-inner" data-reveal>
       <p class="clients-label">Trusted by teams at</p>
-      <div class="clients-logos">
-        <span class="client-name">KirimLagi</span>
-        <span class="client-name">Filehut</span>
-        <span class="client-name">Blendr</span>
-        <span class="client-name">Paylo</span>
-        <span class="client-name">Shipfast</span>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span class="client-name">KirimLagi</span>
+          <span class="client-name">Filehut</span>
+          <span class="client-name">Blendr</span>
+          <span class="client-name">Paylo</span>
+          <span class="client-name">Shipfast</span>
+          <span class="client-name">KirimLagi</span>
+          <span class="client-name">Filehut</span>
+          <span class="client-name">Blendr</span>
+          <span class="client-name">Paylo</span>
+          <span class="client-name">Shipfast</span>
+        </div>
       </div>
     </div>
   </section>
@@ -113,12 +132,12 @@
   <!-- Selected Work -->
   <section class="work" id="work">
     <div class="work-inner">
-      <div class="section-header">
+      <div class="section-header" data-reveal>
         <span class="section-label">Selected Work</span>
         <h2 class="section-title">Projects we shipped</h2>
       </div>
-      <div class="work-grid">
-        <article class="work-card">
+      <div class="work-grid" id="workGrid">
+        <article class="work-card" data-reveal data-reveal-delay="0">
           <div class="work-card-visual">
             <div class="work-card-placeholder work-card-fintech">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -126,6 +145,19 @@
                 <line x1="8" y1="21" x2="16" y2="21"/>
                 <line x1="12" y1="17" x2="12" y2="21"/>
               </svg>
+            </div>
+            <div class="work-card-preview" data-preview="fintech">
+              <div class="preview-mock">
+                <div class="mock-header"></div>
+                <div class="mock-chart">
+                  <div class="mock-bar" style="height:40%"></div>
+                  <div class="mock-bar" style="height:70%"></div>
+                  <div class="mock-bar" style="height:55%"></div>
+                  <div class="mock-bar" style="height:90%"></div>
+                  <div class="mock-bar" style="height:60%"></div>
+                </div>
+                <div class="mock-balance">$48,290</div>
+              </div>
             </div>
           </div>
           <div class="work-card-content">
@@ -140,12 +172,22 @@
             </a>
           </div>
         </article>
-        <article class="work-card">
+        <article class="work-card" data-reveal data-reveal-delay="100">
           <div class="work-card-visual">
             <div class="work-card-placeholder work-card-saas">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
               </svg>
+            </div>
+            <div class="work-card-preview" data-preview="saas">
+              <div class="preview-mock preview-mock-saas">
+                <div class="mock-hero-text"></div>
+                <div class="mock-hero-text mock-hero-text-short"></div>
+                <div class="mock-cta-row">
+                  <div class="mock-pill"></div>
+                  <div class="mock-pill mock-pill-ghost"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="work-card-content">
@@ -160,7 +202,7 @@
             </a>
           </div>
         </article>
-        <article class="work-card">
+        <article class="work-card" data-reveal data-reveal-delay="200">
           <div class="work-card-visual">
             <div class="work-card-placeholder work-card-brand">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -168,6 +210,17 @@
                 <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72"/>
                 <path d="M2.75 12.41c6.03-1.23 9.42-1.23 17.72-2.13"/>
               </svg>
+            </div>
+            <div class="work-card-preview" data-preview="brand">
+              <div class="preview-mock preview-mock-brand">
+                <div class="mock-logo-circle"></div>
+                <div class="mock-brand-text"></div>
+                <div class="mock-swatches">
+                  <div class="mock-swatch" style="background:#0099ff"></div>
+                  <div class="mock-swatch" style="background:#7c3aed"></div>
+                  <div class="mock-swatch" style="background:#f59e0b"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="work-card-content">
@@ -189,12 +242,12 @@
   <!-- Services -->
   <section class="services" id="services">
     <div class="services-inner">
-      <div class="section-header">
+      <div class="section-header" data-reveal>
         <span class="section-label">Services</span>
         <h2 class="section-title">What we do</h2>
       </div>
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card" data-reveal data-reveal-delay="0">
           <div class="service-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -205,7 +258,7 @@
           <h3 class="service-title">Web Design</h3>
           <p class="service-desc">Landing pages, marketing sites, and product dashboards. Built to convert, not to decorate.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-reveal data-reveal-delay="100">
           <div class="service-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/>
@@ -216,7 +269,7 @@
           <h3 class="service-title">Brand Identity</h3>
           <p class="service-desc">Logo, color system, and visual language. Coherent from day one, not patched together later.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-reveal data-reveal-delay="200">
           <div class="service-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="16 18 22 12 16 6"/>
@@ -226,7 +279,7 @@
           <h3 class="service-title">No-Code Development</h3>
           <p class="service-desc">Framer, Webflow, or pure HTML/CSS. We ship without waiting for engineering bandwidth.</p>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-reveal data-reveal-delay="300">
           <div class="service-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
@@ -242,12 +295,12 @@
   <!-- Testimonials -->
   <section class="testimonials" id="testimonials">
     <div class="testimonials-inner">
-      <div class="section-header">
+      <div class="section-header" data-reveal>
         <span class="section-label">Testimonials</span>
         <h2 class="section-title">What clients say</h2>
       </div>
       <div class="testimonials-grid">
-        <blockquote class="testimonial-card">
+        <blockquote class="testimonial-card" data-reveal data-reveal-delay="0">
           <div class="testimonial-quote">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M10 11H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0M20 11h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0"/>
@@ -259,7 +312,7 @@
             <span class="testimonial-role">Product Lead at KirimLagi</span>
           </footer>
         </blockquote>
-        <blockquote class="testimonial-card">
+        <blockquote class="testimonial-card" data-reveal data-reveal-delay="100">
           <div class="testimonial-quote">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M10 11H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0M20 11h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0"/>
@@ -271,7 +324,7 @@
             <span class="testimonial-role">Founder at Filehut</span>
           </footer>
         </blockquote>
-        <blockquote class="testimonial-card">
+        <blockquote class="testimonial-card" data-reveal data-reveal-delay="200">
           <div class="testimonial-quote">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M10 11H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0M20 11h-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a6 6 0 0 1-6 6h0"/>
@@ -289,11 +342,11 @@
 
   <!-- CTA -->
   <section class="cta-section" id="contact">
-    <div class="cta-section-inner">
+    <div class="cta-section-inner" data-reveal>
       <h2 class="cta-title">Ready to ship?</h2>
-      <p class="cta-subtitle">Tell us what you are building. We will reply within 24 hours.</p>
+      <p class="cta-subtitle">Have a project in mind? We start in 48 hours.</p>
       <div class="cta-actions">
-        <a href="mailto:hello@barakahagency.com" class="btn btn-primary btn-lg">Start a project</a>
+        <a href="mailto:hello@barakahagency.com" class="btn btn-primary btn-lg magnetic">Start a project</a>
         <span class="cta-or">or email <a href="mailto:hello@barakahagency.com">hello@barakahagency.com</a></span>
       </div>
     </div>
