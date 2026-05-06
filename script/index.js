@@ -105,4 +105,13 @@
   search.addEventListener('input', function () {
     render(search.value);
   });
+
+  // Ko-fi close
+  var kofiCard = document.getElementById('kofiCard');
+  var kofiClose = document.getElementById('kofiClose');
+  if (kofiClose && kofiCard) {
+    kofiClose.addEventListener('click', function () {
+      kofiCard.style.display = 'none';
+    });
+  }
 })();
