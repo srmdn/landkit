@@ -21,6 +21,20 @@
   --section-padding-mobile: 60px;
 }
 
+/* Light Theme */
+[data-theme="light"] {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #111111;
+  --color-muted: #666666;
+  --color-accent: #0099ff;
+  --color-frosted: rgba(0, 0, 0, 0.06);
+  --color-frosted-hover: rgba(0, 0, 0, 0.1);
+  --color-ring: rgba(0, 153, 255, 0.15);
+  --color-ring-hover: rgba(0, 153, 255, 0.3);
+  --color-ghost: rgba(0, 0, 0, 0.5);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -172,6 +186,44 @@ body.cursor-hidden .cursor-follower {
 .btn-lg {
   padding: 14px 28px;
   font-size: 16px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--color-frosted);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle .icon-sun {
+  display: block;
 }
 
 /* Magnetic Button */
@@ -1130,6 +1182,128 @@ body.cursor-hidden .cursor-follower {
 
 .sa-cta-btn:hover {
   background: #1da851;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] .grain-overlay {
+  opacity: 0.025;
+  filter: invert(1);
+}
+
+[data-theme="light"] .aurora-blob {
+  opacity: 0.12;
+}
+
+[data-theme="light"] .nav {
+  background: rgba(250, 250, 250, 0.8);
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .hero-title {
+  background: linear-gradient(180deg, #000000 0%, #444444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="light"] .bento-item {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(0, 153, 255, 0.12);
+}
+
+[data-theme="light"] .bento-item:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 153, 255, 0.25);
+}
+
+[data-theme="light"] .work-card-fintech {
+  background: linear-gradient(135deg, #f0f4fa, #e8f0f8);
+}
+
+[data-theme="light"] .work-card-saas {
+  background: linear-gradient(135deg, #f5f5fa, #eef0f8);
+}
+
+[data-theme="light"] .work-card-brand {
+  background: linear-gradient(135deg, #f0faf0, #e8f5e8);
+}
+
+[data-theme="light"] .preview-mock {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .mock-balance {
+  color: var(--color-text);
+}
+
+[data-theme="light"] .service-icon {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .service-card:hover .service-icon {
+  background: rgba(0, 153, 255, 0.08);
+}
+
+[data-theme="light"] .cta-title {
+  background: linear-gradient(180deg, #000000 0%, #444444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="light"] .cta-section::before {
+  background: radial-gradient(ellipse, rgba(0, 153, 255, 0.06) 0%, transparent 70%);
+}
+
+[data-theme="light"] .footer {
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .footer-bottom {
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .footer-col a {
+  color: var(--color-muted);
+}
+
+[data-theme="light"] .client-name {
+  color: var(--color-muted);
+  opacity: 0.4;
+}
+
+[data-theme="light"] .client-name:hover {
+  opacity: 1;
+  color: var(--color-text);
+}
+
+[data-theme="light"] .sa-cta {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .sa-cta-text {
+  color: #111111;
+}
+
+[data-theme="light"] .cursor-follower {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .nav-open {
+  background: rgba(250, 250, 250, 0.98);
+}
+
+[data-theme="light"] .nav-open .nav-links a {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+  color: #111111;
+}
+
+[data-theme="light"] .marquee {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 /* Responsive */

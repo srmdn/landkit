@@ -1,6 +1,36 @@
 (function() {
   'use strict';
 
+  // ============================
+  // Theme Toggle
+  // ============================
+  var themeToggle = document.getElementById('themeToggle');
+  var html = document.documentElement;
+
+  function setTheme(theme) {
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('barakah-theme', 'light');
+    } else {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('barakah-theme', 'dark');
+    }
+  }
+
+  var savedTheme = localStorage.getItem('barakah-theme');
+  var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+  if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
+    setTheme('light');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      var isLight = html.getAttribute('data-theme') === 'light';
+      setTheme(isLight ? 'dark' : 'light');
+    });
+  }
+
   // Detect touch device
   var isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
