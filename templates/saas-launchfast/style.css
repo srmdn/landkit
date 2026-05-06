@@ -963,6 +963,26 @@ body {
 @media (max-width: 768px) {
   .nav-links, .nav-actions { display: none; }
   .nav-toggle { display: flex; }
+
+  .nav-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(8, 9, 10, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-open .nav-inner {
+    flex-wrap: wrap;
+    height: auto;
+    align-content: flex-start;
+  }
   .nav-open .nav-links,
   .nav-open .nav-actions {
     display: flex;
@@ -970,44 +990,31 @@ body {
     width: 100%;
     padding: 1rem 0;
   }
-  .nav-open {
-    background: rgba(8, 9, 10, 0.98);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-standard);
-  }
-  .nav-open .nav-inner {
-    flex-wrap: wrap;
-    height: auto;
-    padding-bottom: 0.75rem;
-  }
   .nav-open .nav-links {
     order: 3;
     gap: 0;
-    width: 100%;
   }
-  .nav-links a {
+  .nav-open .nav-links a {
     display: block;
     padding: 0.6rem 0;
     font-size: 15px;
   }
-  .nav-actions {
+  .nav-open .nav-actions {
     order: 2;
     width: 100%;
     flex-direction: column;
     gap: 0.5rem;
   }
-  .nav-actions .btn { width: 100%; justify-content: center; }
+  .nav-open .nav-actions .btn { width: 100%; justify-content: center; }
 
+  body.nav-open {
+    overflow: hidden;
+  }
   .hero {
     padding: 4rem 1rem 2.5rem;
   }
   .hero h1 { font-size: 1.8rem; }
   .hero p { font-size: 16px; }
-
-  body.nav-open {
-    overflow: hidden;
-  }
 
   /* Dashboard: hide sidebar, simplify */
   .dashboard {
