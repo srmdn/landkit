@@ -327,22 +327,14 @@ body {
 }
 
 /* --- Produk --- */
+.produk-wrapper {
+  background: var(--elevated);
+}
 .produk {
   max-width: 1080px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
   position: relative;
-}
-.produk::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--elevated);
-  z-index: -1;
-  border-radius: var(--radius-lg);
 }
 .section-header {
   text-align: center;
@@ -498,22 +490,14 @@ body {
 }
 
 /* --- Testimoni --- */
+.testimoni-wrapper {
+  background: var(--elevated);
+}
 .testimoni {
   max-width: 1080px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
   position: relative;
-}
-.testimoni::before {
-  content: '';
-  position: absolute;
-  top: 3rem;
-  left: 0;
-  right: 0;
-  bottom: 3rem;
-  background: var(--elevated);
-  z-index: -1;
-  border-radius: var(--radius-lg);
 }
 .testimoni-grid {
   display: grid;
@@ -972,8 +956,7 @@ body {
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.5rem; }
   .keunggulan-item { padding: 1.5rem 1rem; }
-  .produk::before { border-radius: 0; }
-  .testimoni::before { border-radius: 0; }
+  
   .produk-img { height: 160px; }
   .sa-cta { bottom: 1rem; right: 1rem; left: 1rem; max-width: none; }
   .wa-float { top: auto; bottom: 5rem; right: 1rem; transform: none; width: 56px; height: 56px; z-index: 1001; }
