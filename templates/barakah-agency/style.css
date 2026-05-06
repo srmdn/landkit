@@ -1029,12 +1029,41 @@ body.cursor-hidden .cursor-follower {
 
 .cta-or a {
   color: var(--color-accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cta-or a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.cta-or a:hover::after {
+  width: 100%;
 }
 
 .cta-or a:hover {
   opacity: 0.8;
+}
+
+.cta-or a svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.cta-or a:hover svg {
+  transform: translate(2px, -2px);
 }
 
 /* Footer */
