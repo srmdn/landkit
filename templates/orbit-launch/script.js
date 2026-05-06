@@ -32,11 +32,11 @@
       var diff = target.getTime() - now.getTime();
 
       if (diff <= 0) {
-        els.days.textContent = '00';
-        els.hours.textContent = '00';
-        els.minutes.textContent = '00';
-        els.seconds.textContent = '00';
-        return;
+        // Restart countdown to 24 hours for continuous urgency
+        var now = new Date();
+        target = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+        target.setHours(0, 0, 0, 0);
+        diff = target.getTime() - now.getTime();
       }
 
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
