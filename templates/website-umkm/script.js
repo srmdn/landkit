@@ -4,13 +4,50 @@
   var nav = document.querySelector('.nav');
 
   if (toggle && nav) {
+    function openNav() {
+      nav.classList.add('nav-open');
+      document.body.classList.add('nav-open');
+    }
+
+    function closeNav() {
+      nav.classList.remove('nav-open');
+      document.body.classList.remove('nav-open');
+    }
+
+    // Toggle button (hamburger / X)
     toggle.addEventListener('click', function() {
-      nav.classList.toggle('nav-open');
+      if (nav.classList.contains('nav-open')) {
+        closeNav();
+      } else {
+        openNav();
+      }
     });
+
+    // Close on nav link click
     nav.querySelectorAll('.nav-links a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        nav.classList.remove('nav-open');
-      });
+      link.addEventListener('click', closeNav);
+    });
+
+    // Close on WA button click
+    nav.querySelectorAll('.nav-wa a').forEach(function(link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    // Close on logo click
+    nav.querySelector('.nav-logo').addEventListener('click', closeNav);
+
+    // Tap the empty overlay area (outside nav-inner) to close
+    nav.addEventListener('click', function(e) {
+      if (nav.classList.contains('nav-open') && !e.target.closest('.nav-inner')) {
+        closeNav();
+      }
+    });
+
+    // Escape key to close
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && nav.classList.contains('nav-open')) {
+        closeNav();
+      }
     });
   }
 
