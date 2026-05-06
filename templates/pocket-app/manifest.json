@@ -1,0 +1,11 @@
+{
+  "name": "Pocket",
+  "description": "Apple-inspired dark mobile app landing page with CSS phone mockup, app store badges, feature showcase, testimonials, and pricing. For habit tracker / productivity apps.",
+  "category": "app",
+  "tags": ["app", "mobile", "dark", "apple", "premium", "phone-mockup", "habits"],
+  "design_ref": "apple.md",
+  "font": "system-ui",
+  "font_cdn": "",
+  "palette": "dark",
+  "features": ["nav", "hero", "phone-mockup", "features", "stats", "testimonials", "pricing", "cta", "footer"]
+}

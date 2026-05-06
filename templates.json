@@ -55,6 +55,37 @@
     "preview_file": "preview.webp"
   },
   {
+    "name": "Pocket",
+    "description": "Apple-inspired dark mobile app landing page with CSS phone mockup, app store badges, feature showcase, testimonials, and pricing. For habit tracker / productivity apps.",
+    "category": "app",
+    "tags": [
+      "app",
+      "mobile",
+      "dark",
+      "apple",
+      "premium",
+      "phone-mockup",
+      "habits"
+    ],
+    "design_ref": "apple.md",
+    "font": "system-ui",
+    "palette": "dark",
+    "features": [
+      "nav",
+      "hero",
+      "phone-mockup",
+      "features",
+      "stats",
+      "testimonials",
+      "pricing",
+      "cta",
+      "footer"
+    ],
+    "folder": "pocket-app",
+    "has_preview": false,
+    "preview_file": null
+  },
+  {
     "name": "LaunchFast",
     "description": "Dark SaaS landing page with sticky nav, hero dashboard, bento features, code showcase, testimonials, pricing, and FAQ. For startups shipping fast.",
     "category": "saas",

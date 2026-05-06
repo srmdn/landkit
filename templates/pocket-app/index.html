@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket - Habit Tracker App</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23000000'/><rect x='7' y='5' width='18' height='22' rx='4' fill='none' stroke='%237c3aed' stroke-width='2.5'/><path d='M12 16l3 3 5-6' fill='none' stroke='%237c3aed' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <style>
+    /* system-ui is used natively - no Google Fonts CDN needed */
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="1" width="18" height="22" rx="4"/>
+          <path d="M8 13l3 3 5-6"/>
+        </svg>
+        Pocket
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="nav-cta">Get Pocket</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg class="icon-hamburger" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Habit Tracker
+        </div>
+        <h1 class="hero-title">Your new favorite<br>habit tracker</h1>
+        <p class="hero-sub">Pocket makes it effortless to track, build, and maintain daily habits. One small tap at a time.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary">Download Pocket</a>
+          <a href="#" class="btn btn-ghost">Learn More</a>
+        </div>
+        <div class="hero-badges">
+          <div class="store-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            Download on the App Store
+          </div>
+          <div class="store-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.807 1.626a1 1 0 010 1.732l-2.807 1.626L15.206 12l2.492-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            Get it on Google Play
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-status">
+              <span class="phone-time">9:41</span>
+              <div class="phone-icons">
+                <svg width="14" height="10" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h4l2-5 4 10 3-6 3 3 4-4"/></svg>
+              </div>
+            </div>
+            <div class="phone-header">Today's Habits</div>
+            <div class="phone-card phone-card-done">
+              <div class="phone-check"></div>
+              <div class="phone-card-text">
+                <span class="phone-card-label">Morning Run</span>
+                <span class="phone-card-time">6:30 AM</span>
+              </div>
+            </div>
+            <div class="phone-card phone-card-done">
+              <div class="phone-check"></div>
+              <div class="phone-card-text">
+                <span class="phone-card-label">Read 20 Pages</span>
+                <span class="phone-card-time">7:15 AM</span>
+              </div>
+            </div>
+            <div class="phone-card phone-card-done">
+              <div class="phone-check"></div>
+              <div class="phone-card-text">
+                <span class="phone-card-label">Meditate</span>
+                <span class="phone-card-time">8:00 AM</span>
+              </div>
+            </div>
+            <div class="phone-card phone-card-pending">
+              <div class="phone-check-empty"></div>
+              <div class="phone-card-text">
+                <span class="phone-card-label">Drink Water</span>
+                <span class="phone-card-time">8x daily</span>
+              </div>
+            </div>
+            <div class="phone-card phone-card-pending">
+              <div class="phone-check-empty"></div>
+              <div class="phone-card-text">
+                <span class="phone-card-label">Write Journal</span>
+                <span class="phone-card-time">Before bed</span>
+              </div>
+            </div>
+            <div class="phone-progress">
+              <span class="phone-progress-text">60% complete</span>
+              <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:60%"></div></div>
+            </div>
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything you need to build habits that last</h2>
+        <p class="section-desc">Designed around how people actually build habits. No fluff, no gimmicks.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Daily Check-ins</h3>
+          <p class="feature-desc">Tap to log habits in seconds. Smart reminders keep you consistent without being annoying.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="100">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Smart Streaks</h3>
+          <p class="feature-desc">Watch your progress grow. Pocket tracks your streaks and shows patterns you would miss otherwise.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="200">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Beautiful Reports</h3>
+          <p class="feature-desc">See your month at a glance. Clear charts and insights that actually help you improve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-number">50K+</span>
+        <span class="stat-label">Daily Active Users</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">4.9</span>
+        <span class="stat-label">App Store Rating</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">12M</span>
+        <span class="stat-label">Habits Checked Off</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Uptime</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-inner">
+      <div class="section-header">
+        <span class="section-tag">Loved By Users</span>
+        <h2 class="section-title">What people are saying</h2>
+        <p class="section-desc">Join thousands of people who transformed their daily routines.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-quote">"I have tried every habit app out there. Pocket is the only one that stuck. Six months and counting."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#7c3aed;">M</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">Maya K.</span>
+              <span class="testimonial-role">Product Designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal data-reveal-delay="100">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-quote">"The streak system actually motivates me. I have not missed a day since I started using Pocket."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#6366f1;">J</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">James R.</span>
+              <span class="testimonial-role">Software Engineer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal data-reveal-delay="200">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed" stroke="#7c3aed"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-quote">"Simple, beautiful, and it just works. No bloat, no noise. This is habit tracking done right."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#a855f7;">S</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">Sarah L.</span>
+              <span class="testimonial-role">Freelance Writer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-inner">
+      <div class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Start free. Upgrade when you are ready.</h2>
+        <p class="section-desc">No hidden fees. No surprise charges. Cancel anytime.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-reveal>
+          <h3 class="pricing-name">Free</h3>
+          <div class="pricing-price">
+            <span class="pricing-amount">$0</span>
+            <span class="pricing-period">/mo</span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Up to 5 habits
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Daily reminders
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Basic streak tracking
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/></svg>
+              Weekly reports
+            </li>
+          </ul>
+          <a href="#" class="btn btn-secondary pricing-btn">Get Started Free</a>
+        </div>
+        <div class="pricing-card pricing-card-featured" data-reveal data-reveal-delay="100">
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-name">Pro</h3>
+          <div class="pricing-price">
+            <span class="pricing-amount">$6</span>
+            <span class="pricing-period">/mo</span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Unlimited habits
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Smart reminders
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Advanced analytics
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Export data
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Priority support
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary pricing-btn">Try Pro Free</a>
+        </div>
+        <div class="pricing-card" data-reveal data-reveal-delay="200">
+          <h3 class="pricing-name">Lifetime</h3>
+          <div class="pricing-price">
+            <span class="pricing-amount">$49</span>
+            <span class="pricing-period">once</span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Everything in Pro
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Future features included
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Lifetime updates
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Beta access
+            </li>
+          </ul>
+          <a href="#" class="btn btn-secondary pricing-btn">Buy Lifetime</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-section" id="cta">
+    <div class="cta-inner">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <h2 class="cta-title">Start building better habits today</h2>
+      <p class="cta-sub">Free on iOS and Android. No account required. Your data stays on your device.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary btn-large">Download Pocket</a>
+      </div>
+      <div class="cta-badges">
+        <div class="store-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          Download on the App Store
+        </div>
+        <div class="store-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.807 1.626a1 1 0 010 1.732l-2.807 1.626L15.206 12l2.492-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+          Get it on Google Play
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="1" width="18" height="22" rx="4"/>
+          <path d="M8 13l3 3 5-6"/>
+        </svg>
+        Pocket
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+        <a href="#">Twitter</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Pocket. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Monetization CTA: Dibuat oleh Said -->
+  <div class="sa-cta" id="saCta">
+    <div class="sa-cta-inner">
+      <span class="sa-cta-label">Dibuat oleh Said</span>
+      <p class="sa-cta-text">Mau landing page ini jadi milik kamu?</p>
+      <a href="https://wa.me/628567040666?text=Hai%2C%20saya%20tertarik%20buat%20landing%20page%20untuk%20bisnis%20saya" class="sa-cta-btn" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Hubungi sekarang
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
