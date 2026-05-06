@@ -8,13 +8,15 @@ OUTPUT = Path(__file__).resolve().parent.parent / "templates.json"
 
 FIELDS = ["name", "description", "category", "tags", "design_ref", "font", "palette", "features"]
 
+# Preview image priority: webp first (smaller), then png
+PREVIEW_CANDIDATES = ["preview.webp", "preview.png"]
+
 def scan():
     entries = []
     for folder in sorted(TEMPLATES_DIR.iterdir()):
         if not folder.is_dir():
             continue
         manifest = folder / "manifest.json"
-        preview = folder / "preview.png"
         if manifest.exists():
             data = json.loads(manifest.read_text())
         else:
@@ -27,7 +29,16 @@ def scan():
         # Only keep known fields
         entry = {k: data[k] for k in FIELDS if k in data}
         entry["folder"] = folder.name
-        entry["has_preview"] = preview.exists()
+
+        # Find preview image (prefer webp)
+        preview_file = None
+        for candidate in PREVIEW_CANDIDATES:
+            if (folder / candidate).exists():
+                preview_file = candidate
+                break
+
+        entry["has_preview"] = preview_file is not None
+        entry["preview_file"] = preview_file  # e.g. "preview.webp" or "preview.png"
         entries.append(entry)
     return entries
 

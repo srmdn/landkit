@@ -30,7 +30,8 @@
       "footer"
     ],
     "folder": "saas-launchfast",
-    "has_preview": false
+    "has_preview": true,
+    "preview_file": "preview.webp"
   },
   {
     "name": "website-umkm",
@@ -60,6 +61,7 @@
       "Responsive (desktop, tablet, mobile, small mobile)"
     ],
     "folder": "website-umkm",
-    "has_preview": false
+    "has_preview": false,
+    "preview_file": null
   }
 ]

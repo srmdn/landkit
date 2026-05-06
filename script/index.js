@@ -69,7 +69,7 @@
 
     gallery.innerHTML = filtered.map(function (t) {
       var imgHtml = t.has_preview
-        ? '<img src="templates/' + t.folder + '/preview.png" alt="' + t.name + '" loading="lazy">'
+        ? '<img src="templates/' + t.folder + '/' + (t.preview_file || 'preview.png') + '" alt="' + t.name + '" loading="lazy">'
         : '<span>No preview</span>';
       var tagsHtml = (t.tags || []).map(function (tag) {
         return '<span class="tag">' + tag + '</span>';
