@@ -156,17 +156,6 @@ a {
   pointer-events: none;
 }
 
-.hero-bg-img {
-  position: absolute;
-  inset: 0;
-  background-image: url('assets/hero.webp');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.25;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .hero-inner {
   max-width: 1080px;
   margin: 0 auto;
