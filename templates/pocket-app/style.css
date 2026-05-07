@@ -1082,6 +1082,28 @@ a {
     margin-top: 0.5rem;
   }
 
+  .nav-open .nav-logo,
+  .nav-open .nav-toggle {
+    position: sticky;
+    top: 0.75rem;
+    z-index: 2;
+  }
+
+  /* Solid backdrop prevents menu links from showing through the sticky header */
+  .nav-open .nav-inner::before {
+    content: '';
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin-bottom: -48px;
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 1;
+  }
+
   body.nav-open {
     overflow: hidden;
   }
