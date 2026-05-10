@@ -1,0 +1,11 @@
+{
+  "name": "Nur",
+  "description": "Landing page untuk Smart Masjid Operating System - platform manajemen masjid modern dengan fitur jadwal sholat, donasi & QRIS, kajian, manajemen jamaah, dan laporan keuangan. Desain warm emerald dengan nuansa Islami-modern, terinspirasi dari Supabase, Stripe, dan Linear.",
+  "category": "saas",
+  "tags": ["masjid", "islamic", "indonesia", "saas", "emerald", "warm", "community", "donation", "prayer"],
+  "design_ref": "supabase.md",
+  "font": "Inter",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600&display=swap",
+  "palette": "light",
+  "features": ["nav", "hero", "logos", "features", "showcase", "metrics", "testimonials", "cta", "footer"]
+}
