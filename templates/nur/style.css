@@ -500,10 +500,40 @@ body.nav-open { overflow: hidden; }
   flex-direction: column;
   align-items: stretch;
   text-align: center;
-  gap: 12px;
-  margin-top: auto;
-  padding: 24px;
 }
+
+/* --- Dashboard Cards (Hero) --- */
+.dash-prayer { grid-column: 1; }
+.dash-donasi { grid-column: 2; }
+.dash-donasi-progress { margin-top: 8px; }
+
+/* --- Transparency Right --- */
+.transparency-right { position: relative; }
+
+/* --- Mobile App Buttons --- */
+.mobile-app-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.mobile-app-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-lg);
+  font-weight: 510;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.mobile-app-buttons .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* --- Feature Mockups --- */
 .mockup-time {
   font-size: 15px;
   font-weight: 600;
