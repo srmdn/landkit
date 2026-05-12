@@ -114,8 +114,8 @@
       "footer"
     ],
     "folder": "oss-launch",
-    "has_preview": false,
-    "preview_file": null
+    "has_preview": true,
+    "preview_file": "preview.webp"
   },
   {
     "name": "Pocket",
