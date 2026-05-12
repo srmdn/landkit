@@ -222,9 +222,6 @@ body {
     flex-direction: column;
   }
 
-  html:has(body.nav-open) { overflow: hidden; }
-  body.nav-open { overflow: hidden; }
-
   body.nav-open .nav {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
