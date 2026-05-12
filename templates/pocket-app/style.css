@@ -1083,9 +1083,6 @@ a {
     margin-top: 0.5rem;
   }
 
-  html:has(body.nav-open) { overflow: hidden; }
-  body.nav-open { overflow: hidden; }
-
   .hero {
     padding: 5rem 1rem 3rem;
     min-height: auto;

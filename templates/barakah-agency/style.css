@@ -1365,11 +1365,7 @@ body.cursor-hidden .cursor-follower {
   }
 
   .nav-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    height: 100vh;
     z-index: 1000;
     background: rgba(5, 5, 5, 0.98);
     backdrop-filter: blur(16px);
@@ -1426,9 +1422,6 @@ body.cursor-hidden .cursor-follower {
     width: 100%;
     justify-content: center;
   }
-
-  html:has(body.nav-open) { overflow: hidden; }
-  body.nav-open { overflow: hidden; }
 
   .hero {
     padding-top: 48px;

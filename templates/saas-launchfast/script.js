@@ -7,12 +7,10 @@
 
   function openNav() {
     nav.classList.add('nav-open');
-    document.body.classList.add('nav-open');
   }
 
   function closeNav() {
     nav.classList.remove('nav-open');
-    document.body.classList.remove('nav-open');
   }
 
   // Toggle button (hamburger / X)

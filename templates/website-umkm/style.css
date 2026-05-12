@@ -882,11 +882,7 @@ body {
   .nav-toggle { display: flex; }
 
   .nav-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    height: 100vh;
     z-index: 1000;
     background: rgba(250, 249, 247, 0.98);
     backdrop-filter: blur(12px);
@@ -924,9 +920,6 @@ body {
     justify-content: center;
     margin: 0.5rem 0;
   }
-
-  html:has(body.nav-open) { overflow: hidden; }
-  body.nav-open { overflow: hidden; }
 
   .hero { padding: 4rem 1rem 3rem; }
   .hero::before { width: 300px; height: 300px; }

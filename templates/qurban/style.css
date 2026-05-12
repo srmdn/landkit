@@ -1173,20 +1173,13 @@ button { cursor: pointer; font-family: inherit; }
   }
 
   .nav-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    height: 100vh;
     z-index: 1001;
     background: #faf9f7;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
   }
-
-  html:has(body.nav-open) { overflow: hidden; }
-  body.nav-open { overflow: hidden; }
 
   .nav-open .nav-inner {
     flex-wrap: wrap;
