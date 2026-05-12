@@ -45,7 +45,6 @@ body {
   overflow-x: hidden;
 }
 
-body.nav-open { overflow: hidden; }
 
 /* --- Buttons --- */
 .btn {
@@ -198,10 +197,6 @@ body.nav-open { overflow: hidden; }
   justify-content: center;
 }
 .nav-toggle .icon-close { display: none; }
-.nav-open .nav-toggle .icon-hamburger { display: none; }
-.nav-open .nav-toggle .icon-close { display: block; }
-
-
 
 @media (max-width: 768px) {
   .nav-links,
