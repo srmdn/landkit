@@ -173,19 +173,22 @@ button { cursor: pointer; font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 24px;
-  flex: 1;
+  margin-right: auto;
 }
 
-.nav-links a:not(.btn) {
+.nav-links a {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-secondary);
   transition: color 0.2s;
 }
 
-.nav-links a:not(.btn):hover { color: var(--text); }
+.nav-links a:hover { color: var(--text); }
 
-.nav-wa { margin-left: auto; }
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
 
 .nav-toggle {
   display: none;
@@ -1157,7 +1160,8 @@ button { cursor: pointer; font-family: inherit; }
   }
 
   /* Nav mobile */
-  .nav-links {
+  .nav-links,
+  .nav-actions {
     display: none;
   }
 
@@ -1184,29 +1188,43 @@ button { cursor: pointer; font-family: inherit; }
     flex-wrap: wrap;
     height: auto;
     align-content: flex-start;
-    padding-top: 12px;
+    padding: 16px 24px;
   }
+
+  .nav-open .nav-toggle {
+    display: flex;
+  }
+
+  .nav-open .nav-toggle .icon-hamburger { display: none; }
+  .nav-open .nav-toggle .icon-close { display: block; }
 
   .nav-open .nav-links {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 0;
-    margin: 16px 0 8px;
+    margin: 32px 0 0;
   }
 
-  .nav-open .nav-links a:not(.btn) {
+  .nav-open .nav-links a {
     display: block;
-    padding: 14px 0;
-    font-size: 17px;
+    padding: 16px 0;
+    font-size: 24px;
     font-weight: 500;
+    color: var(--text);
     border-bottom: 1px solid var(--border);
   }
 
-  .nav-open .nav-wa {
+  .nav-open .nav-actions {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: center;
+  }
+
+  .nav-open .nav-actions .btn {
     width: 100%;
     justify-content: center;
-    margin-bottom: 16px;
   }
 
   /* Hero */

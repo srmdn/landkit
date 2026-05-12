@@ -22,7 +22,7 @@
       nav.classList.contains('nav-open') ? closeNav() : openNav();
     });
 
-    nav.querySelectorAll('.nav-links a, .nav-wa, .nav-logo').forEach(function(el) {
+    nav.querySelectorAll('.nav-links a, .nav-actions a, .nav-logo').forEach(function(el) {
       el.addEventListener('click', closeNav);
     });
 
