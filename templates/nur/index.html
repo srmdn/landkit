@@ -704,7 +704,7 @@ const revObs=new IntersectionObserver((e)=>{e.forEach(en=>{if(en.isIntersecting)
 // Counter animation
 document.querySelectorAll('.counter').forEach(c=>{const t=parseFloat(c.dataset.target),d=c.closest('.stat-card');const co=new IntersectionObserver(([e])=>{if(!e.isIntersecting)return;co.unobserve(e.target);const isF=t%1!==0;let st=null;const dur=1200;function step(ts){if(!st)st=ts;const p=Math.min((ts-st)/dur,1);const ea=1-Math.pow(1-p,3);c.textContent=isF?(t*ea).toFixed(1):Math.floor(t*ea);if(p<1)requestAnimationFrame(step);else c.textContent=isF?t.toFixed(1):t;}requestAnimationFrame(step)},{threshold:0.3});if(d)co.observe(d);else co.observe(c)});
 // Nav toggle
-const nav=document.getElementById('nav'),toggle=document.getElementById('navToggle');if(toggle)toggle.addEventListener('click',()=>{document.body.classList.toggle('nav-open')});
+const nav=document.getElementById('nav'),toggle=document.getElementById('navToggle');if(toggle)toggle.addEventListener('click',()=>{const isOpen=document.body.classList.contains('nav-open');document.body.classList.toggle('nav-open');if(isOpen){sessionStorage.setItem('navScroll',window.scrollY.toString())}else{const y=sessionStorage.getItem('navScroll');if(y){setTimeout(()=>window.scrollTo(0,parseInt(y)),50)}}});window.addEventListener('scroll',()=>{if(document.body.classList.contains('nav-open')){sessionStorage.setItem('navScroll',window.scrollY.toString())}});
 </script>
 </body>
 </html>
