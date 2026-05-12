@@ -88,6 +88,36 @@
     "preview_file": "preview.webp"
   },
   {
+    "name": "OSS Launch",
+    "description": "Dark open source project landing page with terminal-style hero, install command copy, feature grid, quickstart steps, and GitHub CTA. For CLI tools, libraries, and developer apps.",
+    "category": "developer",
+    "tags": [
+      "dark",
+      "open-source",
+      "cli",
+      "developer",
+      "terminal",
+      "github",
+      "minimal"
+    ],
+    "design_ref": "charm.md",
+    "font": "Inter + JetBrains Mono",
+    "palette": "dark",
+    "features": [
+      "nav",
+      "hero",
+      "install-copy",
+      "features",
+      "quickstart",
+      "stats",
+      "cta",
+      "footer"
+    ],
+    "folder": "oss-launch",
+    "has_preview": false,
+    "preview_file": null
+  },
+  {
     "name": "Pocket",
     "description": "Apple-inspired dark mobile app landing page with CSS phone mockup, app store badges, feature showcase, testimonials, and pricing. For habit tracker / productivity apps.",
     "category": "app",

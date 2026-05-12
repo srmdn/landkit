@@ -1,0 +1,11 @@
+{
+  "name": "OSS Launch",
+  "description": "Dark open source project landing page with terminal-style hero, install command copy, feature grid, quickstart steps, and GitHub CTA. For CLI tools, libraries, and developer apps.",
+  "category": "developer",
+  "tags": ["dark", "open-source", "cli", "developer", "terminal", "github", "minimal"],
+  "design_ref": "charm.md",
+  "font": "Inter + JetBrains Mono",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+  "palette": "dark",
+  "features": ["nav", "hero", "install-copy", "features", "quickstart", "stats", "cta", "footer"]
+}
