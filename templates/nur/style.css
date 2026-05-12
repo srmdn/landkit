@@ -236,6 +236,8 @@ body {
     padding: 16px 24px;
   }
 
+  .nav-open .nav-logo { display: none; }
+
   .nav-open .nav-toggle {
     display: flex;
   }
