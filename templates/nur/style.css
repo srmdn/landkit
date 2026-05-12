@@ -272,7 +272,7 @@ body.nav-open {
   justify-content: center;
   background: var(--bg);
   overflow: hidden;
-  padding: 100px 0 60px;
+  padding: 100px 24px 60px;
 }
 .hero-glow {
   position: absolute;
@@ -425,7 +425,7 @@ body.nav-open {
 
 /* --- Stats --- */
 .stats {
-  padding: 80px 0;
+  padding: 80px 24px;
   background: var(--surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
@@ -479,7 +479,7 @@ body.nav-open {
 
 /* --- Features --- */
 .features {
-  padding: 100px 0;
+  padding: 100px 24px;
   background: var(--bg);
 }
 .features-grid {
@@ -712,7 +712,7 @@ body.nav-open {
 /* --- Digital Signage --- */
 .signage {
   background: var(--dark);
-  padding: 100px 0;
+  padding: 100px 24px;
   position: relative;
   overflow: hidden;
 }
@@ -936,7 +936,7 @@ body.nav-open {
 
 /* --- Transparency --- */
 .transparency {
-  padding: 100px 0;
+  padding: 100px 24px;
   background: var(--surface);
 }
 .transparency-grid {
@@ -1061,7 +1061,7 @@ body.nav-open {
 
 /* --- Community --- */
 .community {
-  padding: 100px 0;
+  padding: 100px 24px;
   background: var(--bg);
 }
 .community-grid {
@@ -1151,7 +1151,7 @@ body.nav-open {
 
 /* --- Mobile App --- */
 .mobile-app {
-  padding: 100px 0;
+  padding: 100px 24px;
   background: var(--surface);
   overflow: hidden;
 }
@@ -1290,7 +1290,7 @@ body.nav-open {
 
 /* --- Testimonials --- */
 .testimonials {
-  padding: 100px 0;
+  padding: 100px 24px;
   background: var(--bg);
 }
 .testimonials-grid {
@@ -1321,7 +1321,7 @@ body.nav-open {
 
 /* --- CTA --- */
 .cta {
-  padding: 80px 0;
+  padding: 80px 24px;
   position: relative;
   overflow: hidden;
 }
@@ -1336,7 +1336,7 @@ body.nav-open {
 /* Islamic geometric pattern overlay for CTA */
 .final-cta {
   background: var(--dark);
-  padding: 100px 0;
+  padding: 100px 24px;
   position: relative;
   overflow: hidden;
 }
@@ -1396,7 +1396,7 @@ body.nav-open {
 .footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
-  padding: 64px 0 32px;
+  padding: 64px 24px 32px;
 }
 .footer-grid {
   display: grid;
@@ -1488,14 +1488,17 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 @media (max-width: 768px) {
   .section-title { font-size: 28px; max-width: 100%; }
   .section-desc { font-size: 15px; max-width: 100%; }
-  .hero { padding: 80px 0 48px; }
-  .stats { padding: 56px 0; }
-  .features { padding: 64px 0; }
-  .signage { padding: 64px 0; }
-  .transparency { padding: 64px 0; }
-  .community { padding: 64px 0; }
-  .mobile-app { padding: 64px 0; }
-  .testimonials { padding: 64px 0; }
+  .hero { padding: 80px 24px 48px; }
+  .stats { padding: 56px 24px; }
+  .features { padding: 64px 24px; }
+  .signage { padding: 64px 24px; }
+  .transparency { padding: 64px 24px; }
+  .community { padding: 64px 24px; }
+  .mobile-app { padding: 64px 24px; }
+  .testimonials { padding: 64px 24px; }
+  .cta { padding: 64px 24px; }
+  .final-cta { padding: 64px 24px; }
+  .footer { padding: 48px 24px 24px; }
   .finance-summary { grid-template-columns: 1fr; }
   .community-grid { grid-template-columns: 1fr 1fr; }
 }
