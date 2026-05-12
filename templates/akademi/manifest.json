@@ -1,0 +1,11 @@
+{
+  "name": "Akademi",
+  "description": "Education landing page for a cohort-based coding bootcamp with curriculum accordion, instructor profile, outcomes, testimonials, pricing, FAQ, and countdown enrollment CTA.",
+  "category": "education",
+  "tags": ["education", "bootcamp", "course", "cohort", "pricing", "curriculum", "mentorship"],
+  "design_ref": "course-platform.md",
+  "font": "Plus Jakarta Sans",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+  "palette": "light",
+  "features": ["nav", "hero", "email-capture", "logos", "instructor", "curriculum", "outcomes", "testimonials", "pricing", "faq", "countdown", "cta", "footer"]
+}

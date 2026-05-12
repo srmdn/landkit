@@ -1,5 +1,40 @@
 [
   {
+    "name": "Akademi",
+    "description": "Education landing page for a cohort-based coding bootcamp with curriculum accordion, instructor profile, outcomes, testimonials, pricing, FAQ, and countdown enrollment CTA.",
+    "category": "education",
+    "tags": [
+      "education",
+      "bootcamp",
+      "course",
+      "cohort",
+      "pricing",
+      "curriculum",
+      "mentorship"
+    ],
+    "design_ref": "course-platform.md",
+    "font": "Plus Jakarta Sans",
+    "palette": "light",
+    "features": [
+      "nav",
+      "hero",
+      "email-capture",
+      "logos",
+      "instructor",
+      "curriculum",
+      "outcomes",
+      "testimonials",
+      "pricing",
+      "faq",
+      "countdown",
+      "cta",
+      "footer"
+    ],
+    "folder": "akademi",
+    "has_preview": true,
+    "preview_file": "preview.png"
+  },
+  {
     "name": "BarakahAgency",
     "description": "Dark agency portfolio with bold hero, case study grid, services, and testimonials. For creative studios and design agencies.",
     "category": "agency",
