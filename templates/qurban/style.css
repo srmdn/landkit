@@ -335,6 +335,7 @@ button { cursor: pointer; font-family: inherit; }
 .about-inner {
   max-width: 1080px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about-cards {
@@ -415,6 +416,7 @@ button { cursor: pointer; font-family: inherit; }
 .pricing-inner {
   max-width: 1080px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .pricing-grid {
@@ -799,6 +801,7 @@ button { cursor: pointer; font-family: inherit; }
 .steps-inner {
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .steps-grid {
@@ -867,6 +870,7 @@ button { cursor: pointer; font-family: inherit; }
 .faq-inner {
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .faq-list {
@@ -972,6 +976,7 @@ button { cursor: pointer; font-family: inherit; }
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .cta-final-title {
