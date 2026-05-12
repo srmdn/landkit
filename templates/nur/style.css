@@ -541,9 +541,15 @@ body.nav-open {
 }
 
 /* --- Dashboard Cards (Hero) --- */
-.dash-prayer { grid-column: 1; }
-.dash-donasi { grid-column: 2; }
+.dash-prayer { grid-column: auto; }
+.dash-donasi { grid-column: auto; }
 .dash-donasi-progress { margin-top: 8px; }
+
+@media (max-width: 768px) {
+  .hero-dashboard { grid-template-columns: 1fr; }
+  .hero-cta { flex-direction: column; align-items: center; }
+  .hero-cta .btn-hero { width: 100%; max-width: 320px; justify-content: center; }
+}
 
 /* --- Transparency Right --- */
 .transparency-right { position: relative; }
