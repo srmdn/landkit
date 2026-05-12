@@ -1516,6 +1516,22 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
   color: var(--text);
 }
 
+/* Centered section labels for specific sections */
+.section-label--fitur,
+.section-label--signage,
+.section-label--komunitas,
+.section-label--testimoni {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .section-label--fitur,
+  .section-label--signage,
+  .section-label--komunitas,
+  .section-label--testimoni {
+    text-align: left;
+  }
+}
+
 /* Responsive helpers */
 @media (max-width: 768px) {
   .section-title { font-size: 28px; max-width: 100%; text-align: left; }
