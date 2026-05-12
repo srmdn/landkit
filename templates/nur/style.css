@@ -1518,8 +1518,9 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 /* Responsive helpers */
 @media (max-width: 768px) {
-  .section-title { font-size: 28px; max-width: 100%; }
-  .section-desc { font-size: 15px; max-width: 100%; }
+  .section-title { font-size: 28px; max-width: 100%; text-align: left; }
+  .section-label { text-align: left; }
+  .section-desc { font-size: 15px; max-width: 100%; text-align: left; }
   .hero { padding: 80px 24px 48px; }
   .stats { padding: 56px 24px; }
   .features { padding: 64px 24px; }
