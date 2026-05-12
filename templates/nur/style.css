@@ -201,13 +201,7 @@ body.nav-open { overflow: hidden; }
 .nav-open .nav-toggle .icon-hamburger { display: none; }
 .nav-open .nav-toggle .icon-close { display: block; }
 
-body.nav-open {
-  overflow: hidden;
-}
 
-.nav-open {
-    background: #faf9f7;
-  }
 
 @media (max-width: 768px) {
   .nav-links,
