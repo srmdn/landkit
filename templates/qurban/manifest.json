@@ -1,0 +1,12 @@
+{
+  "name": "Qurban",
+  "description": "Landing page ibadah qurban Idul Adha dengan info harga hewan, kalkulator patungan, dan daftar via WhatsApp. Tema Islamic blue, cocok untuk masjid, lembaga amil, atau panitia qurban.",
+  "category": "kurban",
+  "tags": ["qurban", "idul-adha", "islamic", "donation", "religious", "whatsapp"],
+  "design_ref": "notion.md",
+  "font": "DM Sans",
+  "font_cdn": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap",
+  "palette": "light",
+  "features": ["hero", "harga", "kalkulator", "cara-berqurban", "faq", "cta", "footer"],
+  "author": "Said via landkit"
+}
