@@ -42,6 +42,7 @@ body {
   color: var(--text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body.nav-open { overflow: hidden; }
@@ -1475,7 +1476,7 @@ ul { list-style: none; padding: 0; }
 h4 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
 
 /* Smooth scroll */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 /* Selection color */
 ::selection {
