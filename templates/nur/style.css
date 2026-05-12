@@ -222,7 +222,7 @@ body {
     flex-direction: column;
   }
 
-  body.nav-open { overflow: hidden; }
+  body.nav-open { overflow: hidden; position: fixed; width: 100%; }
 
   body.nav-open .nav {
     backdrop-filter: none;
@@ -235,8 +235,6 @@ body {
     align-content: flex-start;
     padding: 16px 24px;
   }
-
-  .nav-open .nav-logo { display: none; }
 
   .nav-open .nav-toggle {
     display: flex;
