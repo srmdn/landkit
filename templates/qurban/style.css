@@ -173,19 +173,19 @@ button { cursor: pointer; font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-right: auto;
+  flex: 1;
 }
 
-.nav-links a {
+.nav-links a:not(.btn) {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-secondary);
   transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(--text); }
+.nav-links a:not(.btn):hover { color: var(--text); }
 
-.nav-wa { flex-shrink: 0; }
+.nav-wa { margin-left: auto; }
 
 .nav-toggle {
   display: none;
@@ -1172,9 +1172,7 @@ button { cursor: pointer; font-family: inherit; }
     right: 0;
     bottom: 0;
     z-index: 1001;
-    background: rgba(250,249,247,0.98);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: #faf9f7;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -1197,7 +1195,7 @@ button { cursor: pointer; font-family: inherit; }
     margin: 16px 0 8px;
   }
 
-  .nav-open .nav-links a {
+  .nav-open .nav-links a:not(.btn) {
     display: block;
     padding: 14px 0;
     font-size: 17px;
