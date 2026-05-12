@@ -925,11 +925,8 @@ body {
     margin: 0.5rem 0;
   }
 
-  body.nav-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-  }
+  html:has(body.nav-open) { overflow: hidden; }
+  body.nav-open { overflow: hidden; }
 
   .hero { padding: 4rem 1rem 3rem; }
   .hero::before { width: 300px; height: 300px; }

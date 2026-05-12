@@ -1009,11 +1009,8 @@ body {
   }
   .nav-open .nav-actions .btn { width: 100%; justify-content: center; }
 
-  body.nav-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-  }
+  html:has(body.nav-open) { overflow: hidden; }
+  body.nav-open { overflow: hidden; }
   .hero {
     padding: 4rem 1rem 2.5rem;
   }
