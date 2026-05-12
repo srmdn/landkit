@@ -148,8 +148,9 @@ body.nav-open { overflow: hidden; }
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 24px;
-  gap: 32px;
+  gap: 24px;
 }
 .nav-logo {
   display: flex;
@@ -195,34 +196,66 @@ body.nav-open { overflow: hidden; }
 .nav-open .nav-toggle .icon-close { display: block; }
 
 @media (max-width: 768px) {
-  .nav-links {
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-open {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--bg);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
     z-index: 1001;
-    display: none;
-    padding: 80px 24px 40px;
+    background: var(--bg);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
   }
-  .nav-open .nav-links { display: flex; }
-  .nav-links a { font-size: 20px; font-weight: 500; }
-  .nav-actions { display: none; }
+
+  .nav-open .nav-inner {
+    flex-wrap: wrap;
+    height: auto;
+    align-content: flex-start;
+    padding: 16px 24px;
+  }
+
+  .nav-open .nav-toggle { display: block; }
+  .nav-open .nav-toggle .icon-hamburger { display: none; }
+  .nav-open .nav-toggle .icon-close { display: block; }
+
+  .nav-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    margin: 32px 0 0;
+  }
+
+  .nav-open .nav-links a {
+    display: block;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+  }
+
   .nav-open .nav-actions {
     display: flex;
-    position: fixed;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1002;
-    gap: 12px;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: center;
   }
-  .nav-toggle { display: block; }
+
+  .nav-open .nav-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* --- Hero --- */
