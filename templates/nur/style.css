@@ -206,8 +206,8 @@ body.nav-open {
 }
 
 .nav-open {
-  background: var(--bg);
-}
+    background: #faf9f7;
+  }
 
 @media (max-width: 768px) {
   .nav-links,
