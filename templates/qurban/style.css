@@ -1185,7 +1185,7 @@ button { cursor: pointer; font-family: inherit; }
     flex-direction: column;
   }
 
-  body.nav-open { overflow: hidden; }
+  body.nav-open { overflow: hidden; position: fixed; width: 100%; }
 
   .nav-open .nav-inner {
     flex-wrap: wrap;

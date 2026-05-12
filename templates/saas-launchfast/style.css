@@ -1011,6 +1011,8 @@ body {
 
   body.nav-open {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
   .hero {
     padding: 4rem 1rem 2.5rem;
