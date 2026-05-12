@@ -195,6 +195,10 @@ body.nav-open { overflow: hidden; }
 .nav-open .nav-toggle .icon-hamburger { display: none; }
 .nav-open .nav-toggle .icon-close { display: block; }
 
+body.nav-open {
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .nav-links,
   .nav-actions {
@@ -1483,6 +1487,16 @@ html { scroll-behavior: smooth; }
 @media (max-width: 768px) {
   .section-title { font-size: 28px; max-width: 100%; }
   .section-desc { font-size: 15px; max-width: 100%; }
+  .hero { padding: 80px 0 48px; }
+  .stats { padding: 56px 0; }
+  .features { padding: 64px 0; }
+  .signage { padding: 64px 0; }
+  .transparency { padding: 64px 0; }
+  .community { padding: 64px 0; }
+  .mobile-app { padding: 64px 0; }
+  .testimonials { padding: 64px 0; }
+  .finance-summary { grid-template-columns: 1fr; }
+  .community-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 480px) {
@@ -1493,4 +1507,6 @@ html { scroll-behavior: smooth; }
   .community-card { padding: 20px; }
   .finance-dashboard { padding: 16px; }
   .phone-mockup { width: 220px; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .community-grid { grid-template-columns: 1fr; }
 }
