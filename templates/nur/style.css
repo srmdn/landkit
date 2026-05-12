@@ -187,10 +187,15 @@ body.nav-open { overflow: hidden; }
   display: none;
   background: none;
   border: none;
+  color: var(--text);
   cursor: pointer;
-  padding: 8px;
-  margin-right: -8px;
-  z-index: 1002;
+  padding: 4px;
+  line-height: 1;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
 }
 .nav-toggle .icon-close { display: none; }
 .nav-open .nav-toggle .icon-hamburger { display: none; }
@@ -207,7 +212,7 @@ body.nav-open {
   }
 
   .nav-toggle {
-    display: block;
+    display: flex;
   }
 
   .nav-open {
@@ -223,6 +228,8 @@ body.nav-open {
     flex-direction: column;
   }
 
+  body.nav-open { overflow: hidden; }
+
   .nav-open .nav-inner {
     flex-wrap: wrap;
     height: auto;
@@ -230,7 +237,9 @@ body.nav-open {
     padding: 16px 24px;
   }
 
-  .nav-open .nav-toggle { display: block; }
+  .nav-open .nav-toggle {
+    display: flex;
+  }
   .nav-open .nav-toggle .icon-hamburger { display: none; }
   .nav-open .nav-toggle .icon-close { display: block; }
 
@@ -247,6 +256,7 @@ body.nav-open {
     padding: 16px 0;
     font-size: 24px;
     font-weight: 500;
+    color: var(--text);
     border-bottom: 1px solid var(--border);
   }
 
